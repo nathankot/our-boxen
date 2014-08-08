@@ -51,8 +51,6 @@ Service {
 
 Homebrew::Formula <| |> -> Package <| |>
 
-homebrew::tap { 'homebrew/dupes': }
-
 node default {
   # core modules, needed for most things
   include dnsmasq

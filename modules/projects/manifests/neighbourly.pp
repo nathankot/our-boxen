@@ -1,4 +1,5 @@
 class projects::neighbourly {
+  require homebrew
   require people::nathankot::folders
 
   include virtualbox
@@ -6,6 +7,7 @@ class projects::neighbourly {
 
   package { 'composer': ensure => installed }
 
+  homebrew::tap { 'homebrew/dupes': }
   homebrew::tap { 'homebrew/homebrew-php': }
 
   package { 'imagemagick': ensure => installed }
