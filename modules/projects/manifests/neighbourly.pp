@@ -5,17 +5,36 @@ class projects::neighbourly {
   include virtualbox
   include vagrant
 
-  package { 'composer': ensure => installed }
-
   homebrew::tap { 'homebrew/dupes': }
   homebrew::tap { 'homebrew/homebrew-php': }
 
   package { 'imagemagick': ensure => installed }
   package { 'php54': ensure => installed }
-  package { 'php54-intl': ensure => installed }
-  package { 'php54-memcache': ensure => installed }
-  package { 'php54-xdebug': ensure => installed }
-  package { 'phpunit': ensure => installed }
+
+  package { 'php54-intl':
+    ensure => installed,
+    require => Package['php54']
+  }
+
+  package { 'php54-memcache':
+    ensure => installed,
+    require => Package['php54']
+  }
+
+  package { 'php54-xdebug':
+    ensure => installed,
+    require => Package['php54']
+  }
+
+  package { 'phpunit':
+    ensure => installed,
+    require => Package['php54']
+  }
+
+  package { 'composer':
+    ensure => installed,
+    require => Package['php54']
+  }
 
   boxen::project { 'neighbourly':
     mysql   => [],

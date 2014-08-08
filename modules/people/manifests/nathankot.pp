@@ -32,7 +32,6 @@ class people::nathankot {
   package { 'gnupg': ensure => installed }
   package { 'gnupg2': ensure => installed }
   package { 'pass': ensure => installed }
-  package { 'curl-ca-bundle': ensure => installed }
   package { 'fzf': ensure => installed }
   package { 'the_silver_searcher': ensure => installed }
   package { 'ctags': ensure => installed }
