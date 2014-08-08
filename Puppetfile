@@ -73,6 +73,7 @@ github 'openssl',     "1.0.0"
 github 'virtualbox',  "1.0.13"
 github 'vagrant',     "3.1.1"
 github 'skype',       "1.0.8"
+github 'transmission', "1.1.0"
 
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.

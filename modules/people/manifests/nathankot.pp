@@ -21,6 +21,7 @@ class people::nathankot {
   include amethyst
   include unarchiver
   include kaleidoscope
+  include transmission
 
   # Binaries
   include tmux
