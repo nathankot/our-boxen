@@ -73,15 +73,16 @@ class people::nathankot {
   include osx::no_network_dsstores
   include osx::keyboard::capslock_to_control
 
-  # $my       = "${home}/my"
-  # $dotfiles = "${my}/dotfiles"
-  #
-  # file { $my:
-  #   ensure  => directory
-  # }
+  $development = "${home}/Development"
+  $sites = "${development}/Sites"
+  $apps = "${development}/Apps"
+  $packages = "${development}/Packages"
+  $designs = "${development}/Design"
 
-  # repository { $dotfiles:
-  #   source  => 'jbarnette/dotfiles',
-  #   require => File[$my]
-  # }
+  file { $development: ensure => directory }
+  file { $sites: ensure => directory }
+  file { $apps: ensure => directory }
+  file { $packages: ensure => directory }
+  file { $designs: ensure => directory }
+
 }
