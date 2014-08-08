@@ -55,9 +55,12 @@ node default {
   # core modules, needed for most things
   include git
   include hub
+
+  # collaboration tools
   include dropbox
   include googledrive
   include openssl
+  include skype
   package { 'editorconfig': ensure => installed }
 
   # fail if FDE is not enabled

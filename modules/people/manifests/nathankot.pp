@@ -20,6 +20,7 @@ class people::nathankot {
   include alfred
   include amethyst
   include unarchiver
+  include kaleidoscope
 
   # Binaries
   include tmux
