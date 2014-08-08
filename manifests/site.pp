@@ -57,6 +57,7 @@ node default {
   include hub
   include nginx
   include dropbox
+  include googledrive
 
   # fail if FDE is not enabled
   if $::root_encrypted == 'no' {

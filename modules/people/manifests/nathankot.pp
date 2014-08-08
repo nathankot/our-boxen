@@ -6,6 +6,17 @@ class people::nathankot {
   include people::nathankot::karabiner
   include fish
 
+  # Apps
+  include chrome
+  include firefox
+  include appcleaner
+  include caffeine
+  include flux:beta
+  include shortcat
+  include alfred
+  include amethyst
+  include unarchiver
+
   # osx
   include osx::global::disable_key_press_and_hold
   include osx::global::enable_keyboard_control_access

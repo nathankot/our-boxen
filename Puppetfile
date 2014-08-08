@@ -59,6 +59,14 @@ github 'karabiner',   "1.0.1"
 github 'dropbox',     "1.3.0"
 github 'osx',         "2.7.0"
 github 'fish',        "1.0.0"
+github 'chrome',      "1.1.2"
+github 'firefox',     "1.2.1"
+github 'appcleaner',  "1.0.0"
+github 'caffeine',    "1.0.0"
+github 'flux',        "1.0.0"
+github 'shortcat',    "1.0.6"
+github 'alfred',      "1.2.0"
+github 'googledrive', "1.0.2"
 
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.
