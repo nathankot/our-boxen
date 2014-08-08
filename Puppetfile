@@ -45,8 +45,6 @@ github "git",         "2.5.0"
 github "go",          "1.1.0"
 github "homebrew",    "1.9.4"
 github "hub",         "1.3.0"
-github "inifile",     "1.0.3", :repo => "puppetlabs/puppetlabs-inifile"
-github "nginx",       "1.4.3"
 github "nodejs",      "3.8.1"
 github "openssl",     "1.0.0"
 github "phantomjs",   "2.3.0"
@@ -56,6 +54,8 @@ github "ruby",        "8.1.2"
 github "stdlib",      "4.2.1", :repo => "puppetlabs/puppetlabs-stdlib"
 github "sudo",        "1.0.0"
 github "xquartz",     "1.1.1"
+github "iterm2",      "1.1.2"
+github "property_list_key", "0.2.1"
 
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.
