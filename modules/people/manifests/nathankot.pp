@@ -6,6 +6,10 @@ class people::nathankot {
   include people::nathankot::karabiner
   include fish
 
+  # Projects
+  include projects::wedis
+  include projects::neighbourly
+
   # Apps
   include chrome
   include firefox
