@@ -5,7 +5,8 @@ class projects::neighbourly {
   include vagrant
 
   package { 'composer': ensure => installed }
-  package { 'memcached': ensure => installed }
+
+  homebrew::tap { 'homebrew/homebrew-php': }
 
   boxen::project { 'Neighbourly':
     mysql   => [],
