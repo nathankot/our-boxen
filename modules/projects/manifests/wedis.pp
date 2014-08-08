@@ -2,14 +2,7 @@ class projects::wedis {
 
   require people::nathankot::folders
 
-  package { 'imagemagick': ensure => installed }
-  package { 'php54': ensure => installed }
-  package { 'php54-intl': ensure => installed }
-  package { 'php54-memcache': ensure => installed }
-  package { 'php54-xdebug': ensure => installed }
-  package { 'phpunit': ensure => installed }
-
-  boxen::project { 'Wedis':
+  boxen::project { 'wed.is':
     nodejs  => 'v0.10',
     source  => 'nathankot/wed.is',
     mongodb => true,
