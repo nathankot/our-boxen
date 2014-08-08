@@ -57,6 +57,7 @@ node default {
   include hub
   include dropbox
   include googledrive
+  include openssl
   package { 'editorconfig': ensure => installed }
 
   # fail if FDE is not enabled

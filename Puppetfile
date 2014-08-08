@@ -69,6 +69,7 @@ github 'alfred',      "1.2.0"
 github 'googledrive', "1.0.2"
 github 'tmux',        "1.0.2"
 github 'heroku',      "2.0.0"
+github 'openssl',     "1.0.0"
 
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.
