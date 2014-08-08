@@ -38,7 +38,6 @@ github "module_data", "0.0.3", :repo => "ripienaar/puppet-module-data"
 # Core modules for a basic development environment. You can replace
 # some/most of these if you want, but it's not recommended.
 
-github "dnsmasq",     "1.0.1"
 github "foreman",     "1.2.0"
 github "gcc",         "2.1.1"
 github "git",         "2.5.0"
@@ -57,6 +56,7 @@ github "xquartz",     "1.1.1"
 github "iterm2",      "1.1.2"
 github "property_list_key", "0.2.1"
 github 'karabiner',   "1.0.1"
+github 'dropbox',     "1.3.0"
 
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.
