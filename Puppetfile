@@ -38,6 +38,7 @@ github "module_data", "0.0.3", :repo => "ripienaar/puppet-module-data"
 # Core modules for a basic development environment. You can replace
 # some/most of these if you want, but it's not recommended.
 
+github "dnsmasq",     "1.0.1"
 github "foreman",     "1.2.0"
 github "gcc",         "2.1.1"
 github "git",         "2.5.0"
@@ -54,8 +55,9 @@ github "stdlib",      "4.2.1", :repo => "puppetlabs/puppetlabs-stdlib"
 github "sudo",        "1.0.0"
 github "xquartz",     "1.1.1"
 github "iterm2",      "1.1.2"
-github "property_list_key", "0.2.1"
-github 'karabiner',   "1.0.1"
+github "nginx",       "1.4.3"
+github "property_list_key", "0.1.0"
+github 'karabiner',   "1.0.4"
 github 'dropbox',     "1.3.0"
 github 'osx',         "2.7.0"
 github 'fish',        "1.0.0"
@@ -73,8 +75,11 @@ github 'openssl',     "1.0.0"
 github 'virtualbox',  "1.0.13"
 github 'vagrant',     "3.1.1"
 github 'skype',       "1.0.8"
-github 'transmission', "1.1.0"
-github 'pow',          "2.1.0"
+github 'transmission',"1.1.0"
+github 'pow',         "2.1.0"
+github 'mongodb',     "1.3.2"
+github 'mysql',       "1.2.1"
+github "inifile",     "1.0.3", :repo => "puppetlabs/puppetlabs-inifile"
 
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.

@@ -2,6 +2,8 @@ class people::nathankot {
 
   $home     = "/Users/${::boxen_user}"
 
+  include people::nathankot::folders
+
   include people::nathankot::iterm
   include people::nathankot::karabiner
   include fish
@@ -15,25 +17,23 @@ class people::nathankot {
   include firefox
   include appcleaner
   include caffeine
-  include flux:beta
+  include flux
   include shortcat
   include alfred
-  include amethyst
-  include unarchiver
-  include kaleidoscope
+  include people::nathankot::amethyst
+  include people::nathankot::unarchiver
+  include people::nathankot::kaleidoscope
   include transmission
 
   # Binaries
   include tmux
   package { 'coreutils': ensure => installed }
-  package { 'findutils': ensure => installed }
   package { 'gpg': ensure => installed }
   package { 'gnupg': ensure => installed }
   package { 'gnupg2': ensure => installed }
   package { 'pass': ensure => installed }
   package { 'curl-ca-bundle': ensure => installed }
   package { 'fzf': ensure => installed }
-  package { 'ack': ensure => installed }
   package { 'the_silver_searcher': ensure => installed }
   package { 'ctags': ensure => installed }
   package { 'todo-txt': ensure => installed }
@@ -94,21 +94,8 @@ class people::nathankot {
   include osx::no_network_dsstores
   include osx::keyboard::capslock_to_control
 
-  # Folders
-  $development = "${home}/Development"
-  $sites = "${development}/Sites"
-  $apps = "${development}/Apps"
-  $packages = "${development}/Packages"
-  $designs = "${development}/Design"
-
-  file { $development: ensure => directory }
-  file { $sites: ensure => directory }
-  file { $apps: ensure => directory }
-  file { $packages: ensure => directory }
-  file { $designs: ensure => directory }
-
   # Encrypted password store
-  repository { "${home}/.password-store"
+  repository { "${home}/.password-store":
     source  => 'nathankot/pass'
   }
 

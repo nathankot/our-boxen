@@ -1,6 +1,7 @@
 class people::nathankot::karabiner {
   include karabiner
-  include karabiner::login_item
+
+  # include karabiner::login_item
 
   karabiner::remap { 'private.tmux_simultaneous': }
   karabiner::remap { 'notsave.tab_numpad_numbers': }
