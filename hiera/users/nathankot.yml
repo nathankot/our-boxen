@@ -1,0 +1,2 @@
+---
+git::global_excludesfile: "%{boxen::config::home}/.gitignore"
