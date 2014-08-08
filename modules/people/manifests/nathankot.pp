@@ -26,6 +26,8 @@ class people::nathankot {
   package { 'coreutils': ensure => installed }
   package { 'findutils': ensure => installed }
   package { 'gpg': ensure => installed }
+  package { 'gnupg': ensure => installed }
+  package { 'gnupg2': ensure => installed }
   package { 'pass': ensure => installed }
   package { 'curl-ca-bundle': ensure => installed }
   package { 'fzf': ensure => installed }
@@ -35,6 +37,7 @@ class people::nathankot {
   package { 'todo-txt': ensure => installed }
   package { 'ledger': ensure => installed }
   package { 'wget': ensure => installed }
+  package { 'namebench': ensure => installed }
 
   package { 'reattach-to-user-namespace':
     ensure          => installed,
