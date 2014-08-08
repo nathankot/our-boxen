@@ -89,6 +89,7 @@ class people::nathankot {
   include osx::no_network_dsstores
   include osx::keyboard::capslock_to_control
 
+  # Folders
   $development = "${home}/Development"
   $sites = "${development}/Sites"
   $apps = "${development}/Apps"
