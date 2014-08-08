@@ -18,6 +18,6 @@ class projects::neighbourly {
   boxen::project { 'neighbourly':
     mysql   => [],
     source  => 'shophq/neighbourly',
-    dir     => '/Users/${::boxen_user}/Development/Sites/neighbourly'
+    dir     => "/Users/${::boxen_user}/Development/Sites/neighbourly"
   }
 }
