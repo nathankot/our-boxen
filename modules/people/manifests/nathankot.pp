@@ -17,6 +17,52 @@ class people::nathankot {
   include amethyst
   include unarchiver
 
+  # Binaries
+  include tmux
+  package { 'gpg': ensure => installed }
+  package { 'pass': ensure => installed }
+  package { 'curl-ca-bundle': ensure => installed }
+  package { 'fzf': ensure => installed }
+  package { 'ack': ensure => installed }
+  package { 'the_silver_searcher': ensure => installed }
+  package { 'ctags': ensure => installed }
+  package { 'todo-txt': ensure => installed }
+  package { 'ledger': ensure => installed }
+
+  package { 'reattach-to-user-namespace':
+    ensure          => installed,
+    install_options => [ '--wrap-pbcopy-and-pbpaste' ]
+  }
+
+  package { 'macvim':
+    ensure          => installed,
+    install_options => [
+      '--with-cscope',
+      '--with-lua',
+      '--HEAD',
+      '--override-system-vim'
+    ]
+  }
+
+  # Heroku
+  include heroku
+
+  heroku::plugin { 'binstubs':
+    source => 'https://github.com/tpope/heroku-binstubs.git'
+  }
+
+  heroku::plugin { 'wildcards':
+    source => 'https://github.com/tpope/heroku-wildcards.git'
+  }
+
+  heroku::plugin { 'config':
+    source => 'https//github.com/ddollar/heroku-config.git'
+  }
+
+  heroku::plugin { 'repo':
+    source => 'https://github.com/heroku/heroku-repo.git'
+  }
+
   # osx
   include osx::global::disable_key_press_and_hold
   include osx::global::enable_keyboard_control_access

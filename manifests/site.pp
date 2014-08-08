@@ -55,9 +55,9 @@ node default {
   # core modules, needed for most things
   include git
   include hub
-  include nginx
   include dropbox
   include googledrive
+  package { 'editorconfig': ensure => installed }
 
   # fail if FDE is not enabled
   if $::root_encrypted == 'no' {
