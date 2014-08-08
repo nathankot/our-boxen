@@ -67,10 +67,6 @@ class people::nathankot {
     source => 'https://github.com/tpope/heroku-wildcards.git'
   }
 
-  heroku::plugin { 'config':
-    source => 'https//github.com/ddollar/heroku-config.git'
-  }
-
   heroku::plugin { 'repo':
     source => 'https://github.com/heroku/heroku-repo.git'
   }
