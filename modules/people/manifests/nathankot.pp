@@ -19,6 +19,8 @@ class people::nathankot {
 
   # Binaries
   include tmux
+  package { 'coreutils': ensure => installed }
+  package { 'findutils': ensure => installed }
   package { 'gpg': ensure => installed }
   package { 'pass': ensure => installed }
   package { 'curl-ca-bundle': ensure => installed }
@@ -28,6 +30,7 @@ class people::nathankot {
   package { 'ctags': ensure => installed }
   package { 'todo-txt': ensure => installed }
   package { 'ledger': ensure => installed }
+  package { 'wget': ensure => installed }
 
   package { 'reattach-to-user-namespace':
     ensure          => installed,
@@ -63,6 +66,15 @@ class people::nathankot {
     source => 'https://github.com/heroku/heroku-repo.git'
   }
 
+  # Npm
+  nodejs::module { 'ultra-repl':
+    node_version => 'v0.10'
+  }
+
+  nodejs::module { 'bower':
+    node_version => 'v0.10'
+  }
+
   # osx
   include osx::global::disable_key_press_and_hold
   include osx::global::enable_keyboard_control_access
@@ -84,5 +96,10 @@ class people::nathankot {
   file { $apps: ensure => directory }
   file { $packages: ensure => directory }
   file { $designs: ensure => directory }
+
+  # Encrypted password store
+  repository { "${home}/.password-store"
+    source  => 'nathankot/pass'
+  }
 
 }
