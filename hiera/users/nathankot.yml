@@ -1,2 +1,3 @@
 ---
 git::global_excludesfile: "%{boxen::config::home}/.gitignore"
+ruby::provider: "rbenv"
