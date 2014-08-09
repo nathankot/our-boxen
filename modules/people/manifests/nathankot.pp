@@ -97,31 +97,31 @@ class people::nathankot {
   # Gems
   ruby_gem { 'lunchy':
     gem          => 'lunchy',
-    version      => '> 0.8',
+    version      => '~> 0.8',
     ruby_version => '*'
   }
 
   ruby_gem { 'mailcatcher':
     gem          => 'mailcatcher',
-    version      => '> 0.5',
+    version      => '~> 0.5',
     ruby_version => '*'
   }
 
   ruby_gem { 'ghi':
     gem          => 'ghi',
-    version      => '> 0.9',
+    version      => '~> 0.9',
     ruby_version => '*'
   }
 
   ruby_gem { 'tmuxinator':
     gem          => 'tmuxinator',
-    version      => '> 0.6',
+    version      => '~> 0.6',
     ruby_version => '*'
   }
 
   ruby_gem { 'rubocop':
     gem          => 'rubocop',
-    version      => '> 0.24',
+    version      => '~> 0.24',
     ruby_version => '*'
   }
 
@@ -133,7 +133,7 @@ class people::nathankot {
 
   ruby_gem { 'powder':
     gem          => 'powder',
-    version      => '> 0.2',
+    version      => '~> 0.2',
     ruby_version => '*'
   }
 
