@@ -53,7 +53,6 @@ Homebrew::Formula <| |> -> Package <| |>
 
 node default {
   # core modules, needed for most things
-  include dnsmasq
   include git
   include hub
   include nginx
@@ -64,10 +63,7 @@ node default {
   include openssl
   include skype
   package { 'editorconfig': ensure => installed }
-
-  class { 'pow':
-    domains => 'dev'
-  }
+  package { 'pow': ensure => installed }
 
   # fail if FDE is not enabled
   if $::root_encrypted == 'no' {
