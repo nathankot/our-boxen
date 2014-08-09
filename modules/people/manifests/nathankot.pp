@@ -88,6 +88,12 @@ class people::nathankot {
   include osx::no_network_dsstores
   include osx::keyboard::capslock_to_control
 
+  # Ruby
+
+  class { 'ruby::global':
+    version => '2.1.2'
+  }
+
   # Gems
   ruby_gem { 'lunchy':
     gem          => 'lunchy',
