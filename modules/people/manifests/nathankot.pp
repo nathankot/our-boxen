@@ -88,8 +88,10 @@ class people::nathankot {
   include osx::no_network_dsstores
   include osx::keyboard::capslock_to_control
 
-  # Ruby
+  # node
+  include nodejs::v0_10
 
+  # Ruby
   class { 'ruby::global':
     version => '2.1.2'
   }
