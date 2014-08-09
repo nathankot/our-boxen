@@ -82,6 +82,11 @@ github 'mysql',       "1.2.1"
 github "inifile",     "1.0.3", :repo => "puppetlabs/puppetlabs-inifile"
 github "php",         "1.2.5"
 github "wget",        "1.0.1"
+github "autoconf",    "1.0.0"
+github "libtool",     "1.0.0"
+github "pcre",        "1.0.0"
+github "libpng",      "1.0.0"
+
 
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.
