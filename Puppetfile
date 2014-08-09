@@ -81,6 +81,7 @@ github 'mongodb',     "1.3.2"
 github 'mysql',       "1.2.1"
 github "inifile",     "1.0.3", :repo => "puppetlabs/puppetlabs-inifile"
 github "php",         "1.2.5"
+github "wget",        "1.0.1"
 
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.
