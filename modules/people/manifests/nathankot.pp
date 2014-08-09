@@ -93,42 +93,42 @@ class people::nathankot {
 
   # Ruby
   ruby::version { '1.9.3-p194': }
-  ruby::version { '2.1.2': }
+  ruby::version { '2.0.0-p481': }
 
   # Gems
   ruby_gem { 'lunchy':
     gem          => 'lunchy',
-    ruby_version => '*'
+    ruby_version => '2.*'
   }
 
   ruby_gem { 'mailcatcher':
     gem          => 'mailcatcher',
-    ruby_version => '*'
+    ruby_version => '2.*'
   }
 
   ruby_gem { 'ghi':
     gem          => 'ghi',
-    ruby_version => '*'
+    ruby_version => '2.*'
   }
 
   ruby_gem { 'tmuxinator':
     gem          => 'tmuxinator',
-    ruby_version => '*'
+    ruby_version => '2.*'
   }
 
   ruby_gem { 'gemedit':
     gem          => 'gemedit',
-    ruby_version => '*'
+    ruby_version => '2.*'
   }
 
   ruby_gem { 'rubocop':
     gem          => 'rubocop',
-    ruby_version => '*'
+    ruby_version => '2.*'
   }
 
   ruby_gem { 'timetrap':
     gem          => 'timetrap',
-    ruby_version => '*'
+    ruby_version => '2.*'
   }
 
   # Encrypted password store
