@@ -92,7 +92,6 @@ class people::nathankot {
   include nodejs::v0_10
 
   # Ruby
-  class { 'ruby::global': version => '2.1.2' }
   ruby::version { '1.9.3-p194': }
   ruby::version { '2.1.2': }
 
