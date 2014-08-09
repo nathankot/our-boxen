@@ -1,4 +1,4 @@
 ---
 git::global_excludesfile: "/Users/%{boxen::user}/.gitignore"
 ruby::provider: "rbenv"
-mongodb::params::port: 27017
+mongodb::port: 27017
