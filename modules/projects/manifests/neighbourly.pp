@@ -8,32 +8,31 @@ class projects::neighbourly {
   homebrew::tap { 'homebrew/dupes': }
   homebrew::tap { 'homebrew/homebrew-php': }
 
+  include php::5_4
+  include php::composer
+
   package { 'imagemagick': ensure => installed }
-  package { 'php54': ensure => installed }
 
-  package { 'php54-intl':
-    ensure => installed,
-    require => Package['php54']
+  $version = '5.4.24'
+
+  php::local { "/Users/${::boxen_user}/Development/Sites/neighbourly":
+    version => $version
   }
 
-  package { 'php54-memcache':
-    ensure => installed,
-    require => Package['php54']
+  php::extension::intl { "intl for ${version}":
+    php => $version
   }
 
-  package { 'php54-xdebug':
-    ensure => installed,
-    require => Package['php54']
+  php::extension::memcache { "memcache for ${version}":
+    php => $version
+  }
+
+  php::extension::xdebug { "xdebug for ${version}":
+    php => $version
   }
 
   package { 'phpunit':
-    ensure => installed,
-    require => Package['php54']
-  }
-
-  package { 'composer':
-    ensure => installed,
-    require => Package['php54']
+    ensure => installed
   }
 
   boxen::project { 'neighbourly':
