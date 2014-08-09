@@ -66,6 +66,10 @@ node default {
   include skype
   package { 'editorconfig': ensure => installed }
 
+  class { 'pow':
+    domains => 'dev'
+  }
+
   # fail if FDE is not enabled
   if $::root_encrypted == 'no' {
     fail('Please enable full disk encryption and try again')
