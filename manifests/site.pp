@@ -59,7 +59,6 @@ node default {
   include nginx
 
   # collaboration tools
-  include pow
   include dropbox
   include googledrive
   include openssl
