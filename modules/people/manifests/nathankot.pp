@@ -37,7 +37,6 @@ class people::nathankot {
   package { 'ctags': ensure => installed }
   package { 'todo-txt': ensure => installed }
   package { 'ledger': ensure => installed }
-  package { 'wget': ensure => installed }
   package { 'namebench': ensure => installed }
 
   package { 'reattach-to-user-namespace':
