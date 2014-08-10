@@ -25,6 +25,7 @@ class people::nathankot {
   include people::nathankot::unarchiver
   include people::nathankot::kaleidoscope
   include transmission
+  include mongohub
 
   # Binaries
   include tmux
