@@ -63,7 +63,7 @@ node default {
   include openssl
   include skype
   package { 'editorconfig': ensure => installed }
-  package { 'pow': ensure => installed }
+  class {'pow': domains => 'dev' }
 
   # fail if FDE is not enabled
   if $::root_encrypted == 'no' {
