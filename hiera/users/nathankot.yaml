@@ -2,6 +2,5 @@
 git::global_excludesfile: "/Users/%{::boxen_user}/.gitignore"
 
 mongodb::port: 27017
-mongodb::config::port: 27017
 mysql::config::port: 3306
 postgresql::port: 5432

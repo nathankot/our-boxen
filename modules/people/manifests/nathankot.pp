@@ -1,3 +1,4 @@
+# NK's personal stuff
 class people::nathankot {
 
   $home     = "/Users/${::boxen_user}"

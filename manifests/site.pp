@@ -57,13 +57,14 @@ node default {
   include hub
   include nginx
 
-  # collaboration tools
+  include dnsmasq
+  class {'pow': domains => 'dev' }
+
   include dropbox
   include googledrive
   include openssl
   include skype
   package { 'editorconfig': ensure => installed }
-  class {'pow': domains => 'dev' }
 
   # fail if FDE is not enabled
   if $::root_encrypted == 'no' {
