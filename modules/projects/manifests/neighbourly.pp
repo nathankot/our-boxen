@@ -10,6 +10,7 @@ class projects::neighbourly {
 
   include php::5_4
   include php::composer
+  include memcached
 
   package { 'imagemagick': ensure => installed }
 

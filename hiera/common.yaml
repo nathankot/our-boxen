@@ -6,3 +6,9 @@
 # Have a gander at some of these examples to get an idea of some of the things
 # that you can affect 'out of the box', and then customise to your
 # heart's content.
+
+# Use default ports
+mongodb::port: 27017
+mysql::config::port: 3306
+postgresql::port: 5432
+memcached::port: "11211"
