@@ -64,6 +64,7 @@ node default {
   include googledrive
   include openssl
   include skype
+  include memcached
   package { 'editorconfig': ensure => installed }
 
   # fail if FDE is not enabled
