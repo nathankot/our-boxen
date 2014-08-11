@@ -58,7 +58,7 @@ node default {
   include nginx
 
   include dnsmasq
-  class {'pow': domains => 'dev' }
+  class { 'pow': domains => 'dev' }
 
   include dropbox
   include googledrive
