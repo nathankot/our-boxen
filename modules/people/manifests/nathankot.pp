@@ -95,6 +95,7 @@ class people::nathankot {
 
   # Ruby
   ruby::version { '2.0.0-p481': }
+  class { 'ruby::global': version => '2.1.2' }
 
   # Gems
   ruby_gem { 'lunchy':
