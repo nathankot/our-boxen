@@ -140,6 +140,12 @@ class people::nathankot {
     ruby_version => '*'
   }
 
+  ruby_gem { 'reckon':
+    gem          => 'reckon',
+    version      => '~> 0.3',
+    ruby_version => '*'
+  }
+
   # Encrypted password store
   repository { "${home}/.password-store":
     source  => 'nathankot/pass'
