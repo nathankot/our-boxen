@@ -40,6 +40,7 @@ class people::nathankot {
   package { 'todo-txt': ensure => installed }
   package { 'ledger': ensure => installed }
   package { 'namebench': ensure => installed }
+  package { 'tmux-mem-cpu-load': ensure => installed }
 
   package { 'reattach-to-user-namespace':
     ensure          => installed,
