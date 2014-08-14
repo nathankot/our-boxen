@@ -1,4 +1,4 @@
-class people::nathankot::karabiner {
+class people::nathankot::apps::karabiner {
   include karabiner
 
   # include karabiner::login_item

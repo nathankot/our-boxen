@@ -1,4 +1,4 @@
-class people::nathankot::iterm {
+class people::nathankot::apps::iterm {
 
   include iterm2::dev
 

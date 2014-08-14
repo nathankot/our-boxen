@@ -1,6 +1,7 @@
 class projects::wedis {
 
-  require people::nathankot::folders
+  require global::folders
+  include heroku
 
   boxen::project { 'wed.is':
     nodejs  => 'v0.10',
