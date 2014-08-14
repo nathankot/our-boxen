@@ -146,6 +146,9 @@ class people::nathankot {
     ruby_version => '*'
   }
 
+  # Python
+  include python
+
   # Encrypted password store
   repository { "${home}/.password-store":
     source  => 'nathankot/pass'

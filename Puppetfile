@@ -87,6 +87,7 @@ github "libtool",     "1.0.0"
 github "pcre",        "1.0.0"
 github "libpng",      "1.0.0"
 github "memcached",   "2.0.0"
+github "python",      "1.1.1"
 
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.
