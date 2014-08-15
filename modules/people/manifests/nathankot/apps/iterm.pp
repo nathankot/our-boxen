@@ -28,4 +28,11 @@ class people::nathankot::apps::iterm {
     selection_color     => [1, 0.8353000283241272, 0.70980000495910645]
   }
 
+  boxen::osx_defaults { 'Iterm2 Preferences Folder':
+    user   => $::boxen_user,
+    key    => 'PrefsCustomFolder',
+    domain => 'com.googlecode.iterm2',
+    value  => "/Users/${::boxen_user}/.dotfiles/lib/iterm2"
+  }
+
 }
