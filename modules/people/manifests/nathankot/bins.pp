@@ -1,5 +1,6 @@
 class people::nathankot::bins {
 
+  include people::nathankot::bins::vim
   include tmux
   package { 'coreutils': ensure => installed }
   package { 'gpg': ensure => installed }
@@ -19,14 +20,5 @@ class people::nathankot::bins {
     install_options => [ '--wrap-pbcopy-and-pbpaste' ]
   }
 
-  package { 'macvim':
-    ensure          => installed,
-    install_options => [
-      '--with-cscope',
-      '--with-lua',
-      '--HEAD',
-      '--override-system-vim'
-    ]
-  }
 
 }
