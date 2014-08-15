@@ -11,10 +11,10 @@ class people::nathankot::bins::vim {
     ]
   }
 
-  exec { "vim plugins":
-    require => Package['macvim'],
-    command => '/opt/boxen/homebrew/vim +PlugInstall +qall',
-    creates => '~/.vim/plugged'
-  }
+  # exec { "vim plugins":
+  #   require => Package['macvim'],
+  #   command => "/opt/boxen/homebrew/bin/vim --noplugin -u /Users/${::boxen_user}/.vim/plugins.vim +PlugInstall +qall",
+  #   creates => "/Users/${::boxen_user}/.vim/plugged"
+  # }
 
 }
