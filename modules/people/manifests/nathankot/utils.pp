@@ -1,6 +1,6 @@
-class people::nathankot::bins {
+class people::nathankot::utils {
 
-  include people::nathankot::bins::vim
+  include people::nathankot::utils::vim
   include tmux
   package { 'coreutils': ensure => installed }
   package { 'gpg': ensure => installed }

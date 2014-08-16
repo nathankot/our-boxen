@@ -18,8 +18,8 @@ class people::nathankot {
   # OSX Settings
   include people::nathankot::osx
 
-  # Binaries
-  include people::nathankot::bins
+  # Utilities
+  include people::nathankot::utils
 
   # Heroku
   include people::nathankot::heroku

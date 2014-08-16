@@ -1,4 +1,4 @@
-class people::nathankot::bins::vim {
+class people::nathankot::utils::vim {
 
   # Install vim plugins
   package { 'macvim':
