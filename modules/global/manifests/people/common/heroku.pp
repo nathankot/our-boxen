@@ -1,4 +1,4 @@
-class people::nathankot::heroku {
+class global::people::common::heroku {
   include heroku
 
   heroku::plugin { 'binstubs':

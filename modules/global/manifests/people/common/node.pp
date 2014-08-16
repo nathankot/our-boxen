@@ -1,4 +1,4 @@
-class people::nathankot::node {
+class global::people::common::node {
   nodejs::module { 'ultra-repl':
     node_version => 'v0.10'
   }

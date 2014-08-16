@@ -1,4 +1,4 @@
-class people::nathankot::apps::karabiner {
+class global::people::common::apps::karabiner {
   include karabiner
 
   # include karabiner::login_item

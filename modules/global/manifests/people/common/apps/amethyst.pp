@@ -1,4 +1,4 @@
-class people::nathankot::apps::amethyst {
+class global::people::common::apps::amethyst {
   package { 'Amethyst':
     ensure   => installed,
     source   => 'http://ianyh.com/amethyst/versions/Amethyst-0.8.6.zip',

@@ -1,4 +1,4 @@
-class people::nathankot::utils::vim {
+class global::people::common::utils::vim {
 
   # Install vim plugins
   package { 'macvim':
@@ -13,7 +13,7 @@ class people::nathankot::utils::vim {
 
   # exec { "vim plugins":
   #   require => Package['macvim'],
-  #   command => "/opt/boxen/homebrew/bin/vim --noplugin -u /Users/${::boxen_user}/.vim/plugins.vim +PlugInstall +qall",
+  #   command => "/opt/boxen/homebrew/bin/vim -T dumb --noplugin -n -es -S /Users/${::boxen_user}/.vim/install.vim -c qall",
   #   creates => "/Users/${::boxen_user}/.vim/plugged"
   # }
 

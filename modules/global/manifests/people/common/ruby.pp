@@ -1,4 +1,4 @@
-class people::nathankot::ruby {
+class global::people::common::ruby {
   ruby::version { '2.0.0-p481': }
   class { 'ruby::global': version => '2.1.2' }
 

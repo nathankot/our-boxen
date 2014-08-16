@@ -13,25 +13,25 @@ class people::nathankot {
   include projects::neighbourly
 
   # Apps
-  include people::nathankot::apps
+  include global::people::common::apps
 
   # OSX Settings
-  include people::nathankot::osx
+  include global::people::common::osx
 
   # Utilities
-  include people::nathankot::utils
+  include global::people::common::utils
 
   # Heroku
-  include people::nathankot::heroku
+  include global::people::common::heroku
 
   # Npm
-  include people::nathankot::node
+  include global::people::common::node
 
   # Ruby
-  include people::nathankot::ruby
+  include global::people::common::ruby
 
   # Python
-  include people::nathankot::python
+  include global::people::common::python
 
   # Encrypted password store
   repository { "${home}/.password-store":

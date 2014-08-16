@@ -1,4 +1,4 @@
-class people::nathankot::osx {
+class global::people::common::osx {
 
   # osx
   file { '/etc/launchd.conf':
