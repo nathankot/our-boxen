@@ -1,6 +1,6 @@
 class global::folders {
 
-  $home     = "/Users/${::boxen_user}"
+  $home     = "/Users/richard"
 
   # Folders
   $development = "${home}/Development"
