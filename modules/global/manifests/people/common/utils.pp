@@ -11,7 +11,6 @@ class global::people::common::utils {
   package { 'the_silver_searcher': ensure => installed }
   package { 'ctags': ensure => installed }
   package { 'todo-txt': ensure => installed }
-  package { 'ledger': ensure => installed }
   package { 'namebench': ensure => installed }
   package { 'tmux-mem-cpu-load': ensure => installed }
 
