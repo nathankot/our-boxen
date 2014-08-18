@@ -26,6 +26,9 @@ class people::richardrowe {
   # Ruby
   include global::people::common::ruby
 
+  # PHP
+  include global::people::common::php
+
   # Python
   include global::people::common::python
 
