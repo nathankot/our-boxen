@@ -14,7 +14,6 @@ class global::people::common::apps {
   include global::people::common::apps::iterm
   include global::people::common::apps::karabiner
   include transmission
-  include mongohub
   include irssi
   include hipchat
 }
