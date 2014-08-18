@@ -5,13 +5,20 @@ class global::people::common::php {
   homebrew::tap { 'homebrew/dupes': }
   homebrew::tap { 'homebrew/homebrew-php': }
 
+  # Install php 5.4
   include php::5_4
+
   include php::composer
   include memcached
 
-  package { 'imagemagick': ensure => installed }
-
   $version = '5.4.24'
+
+  # Install a php version and set as the global default php
+  class { 'php::global':
+    version => $version
+  }
+
+  package { 'imagemagick': ensure => installed }
 
   php::extension::intl { "intl for ${version}":
     php => $version
