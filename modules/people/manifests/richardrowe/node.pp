@@ -1,4 +1,5 @@
-class global::people::common::node {
+class people::richardrowe::node {
+
   nodejs::module { 'ultra-repl':
     node_version => 'v0.10'
   }
@@ -7,6 +8,4 @@ class global::people::common::node {
     node_version => 'v0.10'
   }
 
-  # node
-  include nodejs::v0_10
 }

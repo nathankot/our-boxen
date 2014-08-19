@@ -1,40 +1,46 @@
-# Personal configuration
-
+# NK's personal stuff
 class people::richardrowe {
 
   $home = "/Users/${::boxen_user}"
 
   include fish
 
+  # Apps
+  include common::applications
+  include people::richardrowe::applications
+
+  # App Config
+  include common::config::iterm
+  include common::config::karabiner
+
+  # Login items
+  include common::login_items
+  include people::richardrowe::login_items
+
   # Folder Structure
-  include global::folders
+  include people::richardrowe::folders
 
   # Projects
 
-  # Apps
-  include global::people::common::apps
-
   # OSX Settings
-  include global::people::common::osx
+  include common::osx
 
   # Utilities
-  include global::people::common::utils
-
-  # Npm
-  include global::people::common::node
-
-  # Ruby
-  include global::people::common::ruby
+  include common::utilities
+  include people::richardrowe::utilities
 
   # PHP
-  include global::people::common::php
+  include common::php
+
+  # Npm
+  include common::node
+  include people::richardrowe::node
+
+  # Ruby
+  include common::ruby
+  include people::richardrowe::ruby
 
   # Python
-  include global::people::common::python
-
-  # Encrypted password store
-  repository { "${home}/.password-store":
-    source  => 'richardrowe/pass'
-  }
+  include common::python
 
 }
