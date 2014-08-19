@@ -1,4 +1,4 @@
-class global::people::common::apps::iterm {
+class global::applications::iterm {
 
   include iterm2::dev
 

@@ -1,16 +1,16 @@
-class global::people::common::osx {
+class common::osx {
 
   # osx
   file { '/etc/launchd.conf':
     ensure  => 'present',
-    content => template('people/nathankot/launchd.conf'),
+    content => template('common/launchd.conf'),
     group   => 'wheel',
     owner   => 'root'
   }
 
   file { '/etc/sysctl.conf':
     ensure  => 'present',
-    content => template('people/nathankot/sysctl.conf'),
+    content => template('common/sysctl.conf'),
     group   => 'wheel',
     owner   => 'root'
   }
@@ -53,35 +53,4 @@ class global::people::common::osx {
     domain => 'com.apple.screensaver',
     value  => 0
   }
-
-  osx_login_item { 'Amethyst':
-    name => 'Amethyst',
-    path => '/Applications/Amethyst.app'
-  }
-
-  osx_login_item { 'Dropbox':
-    name => 'Dropbox',
-    path => '/Applications/Dropbox.app'
-  }
-
-  osx_login_item { 'Google Drive':
-    name => 'Google Drive',
-    path => '/Applications/Google\ Drive.app'
-  }
-
-  osx_login_item { 'Shortcat':
-    name => 'Shortcat',
-    path => '/Applications/Shortcat.app'
-  }
-
-  osx_login_item { 'Flux':
-    name => 'Flux',
-    path => '/Applications/Flux.app'
-  }
-
-  osx_login_item { 'Alfred':
-    name => 'Alfred',
-    path => '/Applications/Alfred\ 2.app'
-  }
-
 }

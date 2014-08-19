@@ -1,4 +1,4 @@
-class global::people::common::utils::vim {
+class global::utilities::vim {
 
   # Install vim plugins
   package { 'macvim':

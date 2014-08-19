@@ -1,6 +1,6 @@
 class projects::wedis {
 
-  require global::folders
+  require people::nathankot::folders
   include heroku
 
   boxen::project { 'wed.is':

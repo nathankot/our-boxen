@@ -1,4 +1,4 @@
-class global::folders {
+class people::nathankot::folders {
 
   $home     = "/Users/${::boxen_user}"
 

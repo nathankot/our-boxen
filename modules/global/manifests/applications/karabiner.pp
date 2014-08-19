@@ -1,4 +1,4 @@
-class global::people::common::apps::karabiner {
+class global::applications::karabiner {
   include karabiner
 
   # include karabiner::login_item

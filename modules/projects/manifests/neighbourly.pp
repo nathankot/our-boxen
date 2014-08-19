@@ -1,5 +1,5 @@
 class projects::neighbourly {
-  require global::folders
+  require people::nathankot::folders
   require homebrew
 
   include virtualbox

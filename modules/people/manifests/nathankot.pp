@@ -5,37 +5,43 @@ class people::nathankot {
 
   include fish
 
+  # Apps
+  include common::applications
+  include flux
+  include shortcat
+  include transmission
+  include global::applications::amethyst
+  include global::applications::kaleidoscope
+  include global::applications::mongohub
+
   # Folder Structure
-  include global::folders
+  include people::nathankot::folders
 
   # Projects
   include projects::wedis
   include projects::neighbourly
 
-  # Apps
-  include global::people::common::apps
-
   # OSX Settings
-  include global::people::common::osx
+  include common::osx
+  include common::login_items
+  include people::nathankot::login_items
 
   # Utilities
-  include global::people::common::utils
+  include common::utilities
+  include people::nathankot::utilities
 
   # Heroku
-  include global::people::common::heroku
+  include common::heroku
 
   # Npm
-  include global::people::common::node
+  include common::node
+  include people::nathankot::node
 
   # Ruby
-  include global::people::common::ruby
+  include common::ruby
+  include people::nathankot::ruby
 
   # Python
-  include global::people::common::python
-
-  # Encrypted password store
-  repository { "${home}/.password-store":
-    source  => 'nathankot/pass'
-  }
+  include common::python
 
 }

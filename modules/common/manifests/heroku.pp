@@ -1,4 +1,4 @@
-class global::people::common::heroku {
+class common::heroku {
   include heroku
 
   heroku::plugin { 'binstubs':
