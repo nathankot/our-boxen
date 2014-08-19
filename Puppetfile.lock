@@ -229,7 +229,7 @@ GITHUBTARBALL
     xquartz (1.1.1)
 
 GITHUBTARBALL
-  remote: richardrowe/puppet-dnsmasq
+  remote: boxen/puppet-dnsmasq
   specs:
     dnsmasq (1.0.2)
 
