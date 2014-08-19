@@ -7,12 +7,15 @@ class people::nathankot {
 
   # Apps
   include common::applications
-  include flux
-  include shortcat
-  include transmission
-  include global::applications::amethyst
-  include global::applications::kaleidoscope
-  include global::applications::mongohub
+  include people::nathankot::applications
+
+  # App Config
+  include common::config::iterm
+  include common::config::karabiner
+
+  # Login items
+  include common::login_items
+  include people::nathankot::login_items
 
   # Folder Structure
   include people::nathankot::folders
@@ -23,8 +26,6 @@ class people::nathankot {
 
   # OSX Settings
   include common::osx
-  include common::login_items
-  include people::nathankot::login_items
 
   # Utilities
   include common::utilities

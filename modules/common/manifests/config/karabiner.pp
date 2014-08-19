@@ -1,8 +1,4 @@
-class global::applications::karabiner {
-  include karabiner
-
-  # include karabiner::login_item
-
+class common::config::karabiner {
   karabiner::remap { 'private.tmux_simultaneous': }
   karabiner::remap { 'notsave.tab_numpad_numbers': }
   karabiner::remap { 'general.dont_remap_any_pointing': }

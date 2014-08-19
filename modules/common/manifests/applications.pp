@@ -1,8 +1,8 @@
 # Include this to bootstrap some common applications
 class common::applications {
   include global::applications::unarchiver
-  include global::applications::iterm
-  include global::applications::karabiner
+  include iterm2::stable
+  include karabiner
   include chrome
   include firefox
   include alfred

@@ -1,6 +1,6 @@
 class common::login_items {
-  # Karabiner is automatically made a login item
-  # by it's package.
+
+  include karabiner::login_item
 
   osx_login_item { 'Dropbox':
     name => 'Dropbox',
@@ -16,4 +16,5 @@ class common::login_items {
     name => 'Alfred',
     path => '/Applications/Alfred\ 2.app'
   }
+
 }

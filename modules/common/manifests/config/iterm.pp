@@ -1,7 +1,4 @@
-class global::applications::iterm {
-
-  include iterm2::dev
-
+class common::config::iterm {
   iterm2::colors { 'NK':
     ansi_0_color        => [0.07430712878704071, 0.073481492698192596, 0.073894307017326355],
     ansi_1_color        => [0.14783918857574463, 0.16453593969345093, 0.3843148946762085],
@@ -34,5 +31,4 @@ class global::applications::iterm {
     domain => 'com.googlecode.iterm2',
     value  => "/Users/${::boxen_user}/.dotfiles/lib/iterm2"
   }
-
 }
