@@ -39,7 +39,7 @@ github "module_data", "0.0.3", :repo => "ripienaar/puppet-module-data"
 # some/most of these if you want, but it's not recommended.
 
 # Fork so that we dont intercept .dev requests
-github "dnsmasq",     "1.0.2"
+github "dnsmasq",     "1.0.2", :repo => "nathankot/puppet-dnsmasq"
 github "foreman",     "1.2.0"
 github "gcc",         "2.1.1"
 github "git",         "2.5.0"
