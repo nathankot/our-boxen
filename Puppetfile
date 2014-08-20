@@ -90,6 +90,7 @@ github "memcached",   "2.0.0"
 github "python",      "1.1.1"
 github "irssi",       "1.0.1"
 github "spotify",     "1.0.2"
+github "hipchat",     "1.1.3"
 
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.
