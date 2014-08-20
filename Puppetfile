@@ -88,6 +88,8 @@ github "pcre",        "1.0.0"
 github "libpng",      "1.0.0"
 github "memcached",   "2.0.0"
 github "python",      "1.1.1"
+github "irssi",       "1.0.1"
+github "spotify",     "1.0.2"
 
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.
