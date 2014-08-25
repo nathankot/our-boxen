@@ -1,4 +1,6 @@
 class people::nathankot::ruby {
+  ruby::version { '2.1.1': }
+
   ruby_gem { 'mailcatcher':
     gem          => 'mailcatcher',
     version      => '~> 0.5',
