@@ -14,6 +14,8 @@ class common::config::karabiner {
   karabiner::set { 'repeat.wait': value => '33' }
   karabiner::set { 'parameter.holdingkeytokey_wait': value => '150' }
   karabiner::set { 'parameter.wait_before_and_after_a_modifier_key_event': value => '0' }
+  karabiner::set { 'parameter.keyoverlaidmodifier_initial_modifier_wait': value => '0' }
+  karabiner::set { 'parameter.keyoverlaidmodifier_timeout': value => '100' }
 
   karabiner::private_xml { 'private.xml':
     content => '
