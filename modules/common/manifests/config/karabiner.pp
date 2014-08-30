@@ -33,7 +33,7 @@ class common::config::karabiner {
             <autogen>__KeyToKey__ KeyCode::SPACE, KeyCode::KEY_0</autogen>
           </item>
           <item>
-            <name>Hold Space+ASDFGHJKL; to 1234567890</name>
+            <name>Hold Tab+nm,hjkyui; to 1234567890</name>
             <identifier>private.tab_numpad</identifier>
             <autogen>
               __KeyOverlaidModifier__ KeyCode::TAB,
