@@ -46,4 +46,7 @@ class people::nathankot {
   # Python
   include common::python
 
+  # Haskell
+  include common::haskell
+
 }
