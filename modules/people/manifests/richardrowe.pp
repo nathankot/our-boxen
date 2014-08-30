@@ -12,6 +12,7 @@ class people::richardrowe {
   # App Config
   include common::config::iterm
   include common::config::karabiner
+  include common::config::karabiner::remp
 
   # Login items
   include common::login_items
