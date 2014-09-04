@@ -12,7 +12,8 @@ class projects::neighbourly {
   include php::composer
   include memcached
 
-  package { 'imagemagick': ensure => installed }
+  package { 'imagemagick': ensure    => installed }
+  package { 'elasticsearch': ensure  => installed }
 
   $version = '5.4.24'
 
