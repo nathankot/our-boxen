@@ -13,7 +13,7 @@ class projects::neighbourly {
   include memcached
 
   package { 'imagemagick': ensure    => installed }
-  package { 'elasticsearch': ensure  => installed }
+  package { 'elasticsearch11': ensure  => installed }
 
   $version = '5.4.24'
 
