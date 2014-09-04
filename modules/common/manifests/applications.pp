@@ -12,5 +12,5 @@ class common::applications {
   include dropbox
   include googledrive
   include skype
-
+  include virtualbox
 }

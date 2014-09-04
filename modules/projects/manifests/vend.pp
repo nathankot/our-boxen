@@ -1,22 +1,17 @@
-class projects::neighbourly {
-  require people::nathankot::folders
+class projects::vend {
+  require people::richardrowe::folders
   require homebrew
+  require php
 
-  include virtualbox
   include vagrant
 
-  homebrew::tap { 'homebrew/dupes': }
-  homebrew::tap { 'homebrew/homebrew-php': }
-
-  include php::5_4
   include php::composer
-  include memcached
 
   package { 'imagemagick': ensure => installed }
 
   $version = '5.4.24'
 
-  php::local { "/Users/${::boxen_user}/Development/Sites/neighbourly":
+  php::local { "/Users/${::boxen_user}/Development/Sites/vend":
     version => $version
   }
 
@@ -36,9 +31,9 @@ class projects::neighbourly {
     ensure => installed
   }
 
-  boxen::project { 'neighbourly':
+  boxen::project { 'vend':
     mysql   => [],
-    source  => 'shophq/neighbourly',
-    dir     => "/Users/${::boxen_user}/Development/Sites/neighbourly"
+    source  => 'vend/vend',
+    dir     => "/Users/${::boxen_user}/Development/Sites/vend"
   }
 }
