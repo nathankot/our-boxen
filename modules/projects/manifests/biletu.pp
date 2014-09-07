@@ -1,6 +1,6 @@
 class projects::biletu {
 
-  require people::biletu::folders
+  require people::richardrowe::folders
   include heroku
 
   boxen::project { 'biletu':
