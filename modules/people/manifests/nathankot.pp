@@ -35,6 +35,9 @@ class people::nathankot {
   # Heroku
   include common::heroku
 
+  # PHP
+  include common::php
+
   # Npm
   include common::node
   include people::nathankot::node

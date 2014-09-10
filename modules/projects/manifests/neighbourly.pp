@@ -1,18 +1,10 @@
 class projects::neighbourly {
-  require people::nathankot::folders
-  require homebrew
 
-  include virtualbox
+  require people::nathankot::folders
+  require common::php
+
   include vagrant
 
-  homebrew::tap { 'homebrew/dupes': }
-  homebrew::tap { 'homebrew/homebrew-php': }
-
-  include php::5_4
-  include php::composer
-  include memcached
-
-  package { 'imagemagick': ensure    => installed }
   package { 'elasticsearch11': ensure  => installed }
 
   $version = '5.4.24'
@@ -21,25 +13,10 @@ class projects::neighbourly {
     version => $version
   }
 
-  php::extension::intl { "intl for ${version}":
-    php => $version
-  }
-
-  php::extension::memcache { "memcache for ${version}":
-    php => $version
-  }
-
-  php::extension::xdebug { "xdebug for ${version}":
-    php => $version
-  }
-
-  package { 'phpunit':
-    ensure => installed
-  }
-
   boxen::project { 'neighbourly':
     mysql   => [],
     source  => 'shophq/neighbourly',
     dir     => "/Users/${::boxen_user}/Development/Sites/neighbourly"
   }
+
 }
