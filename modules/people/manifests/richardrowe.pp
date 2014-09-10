@@ -1,4 +1,3 @@
-# NK's personal stuff
 class people::richardrowe {
 
   $home = "/Users/${::boxen_user}"
@@ -22,7 +21,9 @@ class people::richardrowe {
   include people::richardrowe::folders
 
   # Projects
-
+  include projects::vend
+  include projects::biletu
+  
   # OSX Settings
   include common::osx
 

@@ -8,4 +8,5 @@ class people::richardrowe::applications {
   include global::applications::amethyst
   include global::applications::kaleidoscope
   include global::applications::mongohub
+  include dash
 }
