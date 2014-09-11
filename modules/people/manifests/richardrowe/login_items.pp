@@ -12,4 +12,8 @@ class people::richardrowe::login_items {
     path => '/Applications/Flux.app'
   }
 
+  osx_login_item { 'Amethyst':
+    name => 'Amethyst',
+    path => '/Applications/Amethyst.app'
+  }
 }
