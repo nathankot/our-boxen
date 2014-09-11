@@ -12,4 +12,19 @@ class people::nathankot::login_items {
     path => '/Applications/Flux.app'
   }
 
+  osx_login_item { 'iTerm':
+    name => 'iTerm',
+    path => '/Applications/iTerm.app'
+  }
+
+  osx_login_item { 'Dash':
+    name => 'Dash',
+    path => '/Applications/Dash.app'
+  }
+
+  osx_login_item { 'Mjolnir':
+    name => 'Mjolnir',
+    path => '/Applications/Mjolnir.app'
+  }
+
 }
