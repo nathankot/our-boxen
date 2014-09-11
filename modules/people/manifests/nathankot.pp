@@ -52,4 +52,10 @@ class people::nathankot {
   # Haskell
   include common::haskell
 
+  # Lua
+  include common::lua
+  # Required for Mjolnir
+  common::lua::rock { 'mjolnir.hotkey': }
+  common::lua::rock { 'mjolnir.application': }
+
 }
