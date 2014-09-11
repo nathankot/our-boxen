@@ -2,10 +2,21 @@ class common::lua {
   include homebrew
   include common::lua::luarocks
   package { 'lua': }
+
+  package { 'lua52':
+    require => Package[lua]
+  }
+
+  exec { 'brew link lua52 --overwrite':
+    require => Package[lua52]
+  }
 }
 
 class common::lua::luarocks {
-  package { 'luarocks': }
+  require common::lua
+  package { 'luarocks': 
+    install_options => ['--with-lua52']
+  }
 }
 
 define common::lua::rock (
@@ -60,6 +71,7 @@ define common::lua::rock (
   }
 
   $rock_cmd_check_str = "luarocks list | egrep -A1 '^${real_name}\\>' | tail -1 | egrep '\\<${rock_version_check_str}\\> \\(installed\\)'"
+
   if $ensure == 'present' {
       Exec["manage_rock_${name}"]{
          unless => $rock_cmd_check_str

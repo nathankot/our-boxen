@@ -1,4 +1,5 @@
 class global::utilities::vim {
+  require common::lua
 
   # Install vim plugins
   package { 'macvim':
