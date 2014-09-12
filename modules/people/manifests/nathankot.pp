@@ -57,5 +57,6 @@ class people::nathankot {
   # Required for Mjolnir
   common::lua::rock { 'mjolnir.hotkey': }
   common::lua::rock { 'mjolnir.application': }
+  common::lua::rock { 'mjolnir.alert': }
 
 }
