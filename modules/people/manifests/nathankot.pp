@@ -58,5 +58,6 @@ class people::nathankot {
   common::lua::rock { 'mjolnir.hotkey': }
   common::lua::rock { 'mjolnir.application': }
   common::lua::rock { 'mjolnir.alert': }
+  common::lua::rock { 'mjolnir.lb.spotify': }
 
 }
