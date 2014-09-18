@@ -19,6 +19,13 @@ class people::nathankot::ruby {
     ruby_version => '*'
   }
 
+  ruby_gem { 't':
+    gem          => 't',
+    version      => '~> 2.7',
+    ruby_version => '*',
+    ensure       => absent
+  }
+
   ruby_gem { 'reckon':
     gem          => 'reckon',
     version      => '~> 0.3',
