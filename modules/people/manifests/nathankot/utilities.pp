@@ -5,6 +5,7 @@ class people::nathankot::utilities {
   package { 'ledger': ensure     => installed }
   package { 'namebench': ensure  => installed }
   package { 'newsbeuter': ensure => installed }
+  package { 'bfg': ensure => installed }
 
   # Encrypted password store
   repository { "${home}/.password-store":
