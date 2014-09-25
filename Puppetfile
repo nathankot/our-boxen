@@ -91,6 +91,7 @@ github "irssi",       "1.0.1"
 github "spotify",     "1.0.2"
 github "hipchat",     "1.1.3"
 github "dash",        "1.0.0"
+github "redis",       "3.1.0"
 
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.
