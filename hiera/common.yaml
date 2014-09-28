@@ -12,3 +12,4 @@ mongodb::port: 27017
 mysql::config::port: 3306
 postgresql::port: 5432
 memcached::port: "11211"
+dnsmasq::tld: boxen
