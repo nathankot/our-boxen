@@ -5,6 +5,7 @@ class common::php {
   homebrew::tap { 'homebrew/homebrew-php':  }
 
   include php::5_4
+  include php::5_5
   include php::composer
   include memcached
 
