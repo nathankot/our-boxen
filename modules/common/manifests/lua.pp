@@ -10,6 +10,13 @@ class common::lua {
   exec { 'brew link lua52 --overwrite':
     require => Package[lua52]
   }
+
+  # Required for Mjolnir
+  common::lua::rock { 'mjolnir.hotkey': }
+  common::lua::rock { 'mjolnir.application': }
+  common::lua::rock { 'mjolnir.alert': }
+  common::lua::rock { 'mjolnir.lb.spotify': }
+  common::lua::rock { 'mjolnir.tiling': }
 }
 
 class common::lua::luarocks {
