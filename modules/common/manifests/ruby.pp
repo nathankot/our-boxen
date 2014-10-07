@@ -4,7 +4,7 @@ class common::ruby {
 
   ruby_gem { 'tmuxinator':
     gem          => 'tmuxinator',
-    version      => '~> 0.6',
+    version      => '~> 0.6.8',
     ruby_version => '*'
   }
 
