@@ -1,3 +1,10 @@
+GIT
+  remote: https://github.com/nathankot/puppet-php.git
+  ref: master
+  sha: 907656d8797f2f4d7dd921a1ee1a6642d2b581ee
+  specs:
+    php (0.0.1)
+
 GITHUBTARBALL
   remote: boxen/puppet-appcleaner
   specs:
@@ -164,11 +171,6 @@ GITHUBTARBALL
     phantomjs (2.3.0)
 
 GITHUBTARBALL
-  remote: boxen/puppet-php
-  specs:
-    php (1.2.5)
-
-GITHUBTARBALL
   remote: boxen/puppet-pkgconfig
   specs:
     pkgconfig (1.0.0)
@@ -306,7 +308,7 @@ DEPENDENCIES
   osx (= 2.7.0)
   pcre (= 1.0.0)
   phantomjs (= 2.3.0)
-  php (= 1.2.5)
+  php (>= 0)
   pkgconfig (= 1.0.0)
   pow (= 2.1.0)
   python (= 1.1.1)
