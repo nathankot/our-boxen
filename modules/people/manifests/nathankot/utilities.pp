@@ -9,7 +9,16 @@ class people::nathankot::utilities {
   package { 'keybase': ensure     => installed }
   package { 'qcachegrind': ensure => absent }
   package { 'graphviz': ensure    => absent }
-  package { 'weechat': ensure     => installed }
+
+  package { 'weechat':
+    ensure          => installed,
+    install_options => [ 
+      '--with-perl',
+      '--with-ruby',
+      '--with-python',
+      '--with-lua'
+    ]
+  }
 
   # Encrypted password store
   repository { "${home}/.password-store":
