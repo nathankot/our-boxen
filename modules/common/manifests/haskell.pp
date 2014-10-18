@@ -2,6 +2,7 @@ class common::haskell {
   include haskell::platform
   haskell::cabal { 'hdevtools': }
   haskell::cabal { 'ghc-mod': }
+  haskell::cabal { 'cabal-install': }
 }
 
 class haskell::platform {
