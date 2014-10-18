@@ -6,7 +6,8 @@ class common::haskell {
 
 class haskell::platform {
   require homebrew
-  package { 'haskell-platform': }
+  # STUBBED FOR NOW. If you're getting cabal install errors please 
+  # install haskell via their package first: https://www.haskell.org/platform/mac.html
 }
 
 define haskell::cabal (
