@@ -8,4 +8,5 @@ class people::nathankot::applications {
   include global::applications::mjolnir
   include global::applications::kaleidoscope
   include global::applications::mongohub
+  include global::applications::usboverdrive
 }
