@@ -38,7 +38,7 @@ github "module_data", "0.0.3", :repo => "ripienaar/puppet-module-data"
 # Core modules for a basic development environment. You can replace
 # some/most of these if you want, but it's not recommended.
 
-mod "php", :ref => "master", :git => "https://github.com/nathankot/puppet-php.git"
+mod "nathankot-php", :ref => "master", :git => "https://github.com/nathankot/puppet-php.git"
 
 github "dnsmasq",     "2.0.1", :repo => "nathankot/puppet-dnsmasq"
 github "foreman",     "1.2.0"
