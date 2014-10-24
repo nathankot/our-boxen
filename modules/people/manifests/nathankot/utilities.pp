@@ -1,5 +1,7 @@
 class people::nathankot::utilities {
 
+  $home = "/Users/${::boxen_user}"
+
   package { 'pass': ensure        => installed }
   package { 'todo-txt': ensure    => installed }
   package { 'ledger': ensure      => installed }
@@ -22,7 +24,9 @@ class people::nathankot::utilities {
 
   # Encrypted password store
   repository { "${home}/.password-store":
-    source  => 'nathankot/pass'
+    source   => 'nathankot/pass',
+    ensure   => 'origin/master',
+    provider => 'git'
   }
 
 }

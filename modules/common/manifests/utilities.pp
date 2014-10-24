@@ -3,7 +3,6 @@ class common::utilities {
   include global::utilities::vim
   include tmux
   package { 'coreutils': ensure => installed }
-  package { 'gpg': ensure => installed }
   package { 'gnupg': ensure => installed }
   package { 'gnupg2': ensure => installed }
   package { 'tmux-mem-cpu-load': ensure => installed }
