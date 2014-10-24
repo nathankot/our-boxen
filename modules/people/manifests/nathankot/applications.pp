@@ -4,7 +4,6 @@ class people::nathankot::applications {
   include transmission
   include dash
   include spotify
-  include global::applications::amethyst
   include global::applications::mjolnir
   include global::applications::kaleidoscope
   include global::applications::mongohub
