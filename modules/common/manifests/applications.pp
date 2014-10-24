@@ -2,7 +2,7 @@
 class common::applications {
 
   include global::applications::unarchiver
-  include global::applications::alfred
+  # include global::applications::alfred
   include iterm2::stable
   include karabiner
   include chrome
