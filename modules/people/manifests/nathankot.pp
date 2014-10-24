@@ -23,7 +23,7 @@ class people::nathankot {
 
   # Projects
   include projects::wedis
-  include projects::neighbourly
+  # include projects::neighbourly
 
   # OSX Settings
   include common::osx
