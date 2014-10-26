@@ -8,8 +8,7 @@ class people::nathankot::utilities {
   package { 'namebench': ensure   => installed }
   package { 'newsbeuter': ensure  => installed }
   package { 'bfg': ensure         => installed }
-  package { 'qcachegrind': ensure => absent }
-  package { 'graphviz': ensure    => absent }
+  package { 'tor': ensure         => installed }
 
   package { 'weechat':
     ensure          => installed,
