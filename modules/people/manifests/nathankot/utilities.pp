@@ -9,6 +9,7 @@ class people::nathankot::utilities {
   package { 'newsbeuter': ensure  => installed }
   package { 'bfg': ensure         => installed }
   package { 'tor': ensure         => installed }
+  package { 'jrnl': ensure        => installed }
 
   package { 'weechat':
     ensure          => installed,
