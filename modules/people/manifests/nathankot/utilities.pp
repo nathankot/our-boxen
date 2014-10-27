@@ -10,6 +10,7 @@ class people::nathankot::utilities {
   package { 'bfg': ensure         => installed }
   package { 'tor': ensure         => installed }
   package { 'jrnl': ensure        => installed }
+  package { 'ngrok': ensure       => installed }
 
   package { 'weechat':
     ensure          => installed,
