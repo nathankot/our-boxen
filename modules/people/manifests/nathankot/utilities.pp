@@ -11,6 +11,7 @@ class people::nathankot::utilities {
   package { 'tor': ensure         => installed }
   package { 'jrnl': ensure        => installed }
   package { 'ngrok': ensure       => installed }
+  package { 'transcrypt': ensure  => installed }
 
   package { 'weechat':
     ensure          => installed,
