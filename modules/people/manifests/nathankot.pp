@@ -24,6 +24,7 @@ class people::nathankot {
   # Projects
   include projects::wedis
   # include projects::neighbourly
+  include projects::cforce
 
   # OSX Settings
   include common::osx

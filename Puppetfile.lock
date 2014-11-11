@@ -1,9 +1,9 @@
 GIT
-  remote: https://github.com/nathankot/puppet-php.git
+  remote: https://github.com/mattheath/puppet-php.git
   ref: master
-  sha: 907656d8797f2f4d7dd921a1ee1a6642d2b581ee
+  sha: 55141367455156dd9c54bffe418242801b780bf3
   specs:
-    nathankot-php (0.0.1)
+    mattheath-php (0.0.1)
 
 GITHUBTARBALL
   remote: boxen/puppet-appcleaner
@@ -297,11 +297,11 @@ DEPENDENCIES
   karabiner (= 1.0.4)
   libpng (= 1.0.0)
   libtool (= 1.0.0)
+  mattheath-php (>= 0)
   memcached (= 2.0.0)
   module_data (= 0.0.3)
   mongodb (= 1.3.2)
   mysql (= 1.2.1)
-  nathankot-php (>= 0)
   nginx (= 1.4.3)
   nodejs (= 3.8.1)
   openssl (= 1.0.0)

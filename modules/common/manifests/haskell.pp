@@ -3,6 +3,7 @@ class common::haskell {
   haskell::cabal { 'hdevtools': }
   haskell::cabal { 'ghc-mod': }
   haskell::cabal { 'cabal-install': }
+  haskell::cabal { 'hledger': }
 }
 
 class haskell::platform {
