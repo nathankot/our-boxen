@@ -1,4 +1,4 @@
 class common::node {
   # node
-  include nodejs::v0_10
+  nodejs::version { 'v0.10': }
 }
