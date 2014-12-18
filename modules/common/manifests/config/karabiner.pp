@@ -6,6 +6,9 @@ class common::config::karabiner {
   karabiner::set { 'parameter.wait_before_and_after_a_modifier_key_event': value => '0' }
   karabiner::set { 'parameter.keyoverlaidmodifier_initial_modifier_wait': value => '0' }
   karabiner::set { 'parameter.keyoverlaidmodifier_timeout': value => '100' }
+  # The setting is a typo lol
+  karabiner::set { 'general.disable_internal_keyboard_if_external_keyboard_exsits': value => '1' }
+  karabiner::set { 'general.disable_internal_keyboard_if_external_keyboard_exists': value => '1' }
 
   karabiner::private_xml { 'private.xml':
     content => '
