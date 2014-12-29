@@ -43,7 +43,7 @@ mod "mattheath-php", :ref => "master", :git => "https://github.com/mattheath/pup
 github "dnsmasq",     "2.0.1", :repo => "nathankot/puppet-dnsmasq"
 github "foreman",     "1.2.0"
 github "gcc",         "2.2.0"
-github "git",         "2.7.0"
+github "git",         "2.7.1"
 github "go",          "2.1.0"
 github "homebrew",    "1.9.8"
 github "hub",         "1.3.0"
