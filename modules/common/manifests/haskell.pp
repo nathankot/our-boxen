@@ -4,6 +4,8 @@ class common::haskell {
   haskell::cabal { 'ghc-mod': }
   haskell::cabal { 'cabal-install': }
   haskell::cabal { 'hledger': }
+  haskell::cabal { 'hoogle': }
+  haskell::cabal { 'hspec': }
 }
 
 class haskell::platform {
