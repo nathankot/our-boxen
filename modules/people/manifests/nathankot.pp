@@ -53,4 +53,7 @@ class people::nathankot {
   # Haskell
   include common::haskell
 
+  # Docker
+  include docker
+
 }
