@@ -55,5 +55,6 @@ class people::nathankot {
 
   # Docker
   include docker
+  include fig
 
 }
