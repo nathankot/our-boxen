@@ -14,7 +14,7 @@ class common::heroku {
     source => 'https://github.com/heroku/heroku-repo.git'
   }
 
-  heroku::plugin { 'config':
+  heroku::plugin { 'heroku-config':
     source => 'https//github.com/ddollar/heroku-config.git'
   }
 
