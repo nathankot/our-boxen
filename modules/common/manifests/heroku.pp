@@ -1,4 +1,5 @@
 class common::heroku {
+
   include heroku
 
   heroku::plugin { 'binstubs':
@@ -12,4 +13,9 @@ class common::heroku {
   heroku::plugin { 'repo':
     source => 'https://github.com/heroku/heroku-repo.git'
   }
+
+  heroku::plugin { 'config':
+    source => 'https//github.com/ddollar/heroku-config.git'
+  }
+
 }
