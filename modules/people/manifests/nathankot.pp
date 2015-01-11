@@ -23,7 +23,7 @@ class people::nathankot {
 
   # Projects
   include projects::wedis
-  # include projects::neighbourly
+  include projects::neighbourly
   include projects::cforce
 
   # OSX Settings

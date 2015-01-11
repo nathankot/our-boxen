@@ -38,8 +38,6 @@ github "module_data", "0.0.3", :repo => "ripienaar/puppet-module-data"
 # Core modules for a basic development environment. You can replace
 # some/most of these if you want, but it's not recommended.
 
-mod "mattheath-php", :ref => "master", :git => "https://github.com/mattheath/puppet-php.git"
-
 github "dnsmasq",     "2.0.1", :repo => "nathankot/puppet-dnsmasq"
 github "brewcask",    "0.0.4"
 github "foreman",     "1.2.0"
@@ -95,6 +93,7 @@ github "dash",        "1.0.0"
 github "redis",       "3.1.0"
 github "docker",      "0.8.0"
 github "fig",         "1.0.0"
+github "php",         "1.2.6"
 
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.
