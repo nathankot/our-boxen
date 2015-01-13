@@ -3,8 +3,6 @@ class projects::vend {
   require homebrew
   require php
 
-  include vagrant
-
   include php::composer
 
   $version = '5.4.24'
