@@ -94,7 +94,7 @@ github "redis",       "3.1.0"
 github "docker",      "0.8.0"
 github "fig",         "1.0.0"
 github "tunnelblick", "1.0.7"
-mod "php", :ref => "master", :git => "https://github.com/boxen/puppet-php.git"
+mod "boxen-php", :ref => "master", :git => "https://github.com/boxen/puppet-php.git"
 
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.
