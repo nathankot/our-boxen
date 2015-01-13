@@ -26,7 +26,6 @@ def dev(name, *args)
   mod name, :path => "#{ENV['HOME']}/src/boxen/puppet-#{name}"
 end
 
-
 # Includes many of our custom types and providers, as well as global
 # config. Required.
 
@@ -94,8 +93,8 @@ github "dash",        "1.0.0"
 github "redis",       "3.1.0"
 github "docker",      "0.8.0"
 github "fig",         "1.0.0"
-mod "mattheath-php", :ref => "master", :git => "https://github.com/mattheath/puppet-php.git"
 github "tunnelblick", "1.0.7"
+mod "php", :ref => "master", :git => "https://github.com/boxen/puppet-php.git"
 
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.
