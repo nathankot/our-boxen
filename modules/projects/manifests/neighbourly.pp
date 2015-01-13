@@ -4,6 +4,7 @@ class projects::neighbourly {
   require common::php
 
   include vagrant
+  include tunnelblick
 
   package { 'elasticsearch11': ensure  => installed }
 

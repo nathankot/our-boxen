@@ -94,6 +94,7 @@ github "redis",       "3.1.0"
 github "docker",      "0.8.0"
 github "fig",         "1.0.0"
 github "php",         "1.2.6"
+github "tunnelblick", "1.0.7"
 
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.
