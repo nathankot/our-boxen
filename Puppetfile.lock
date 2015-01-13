@@ -253,7 +253,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-vagrant
   specs:
-    vagrant (3.1.1)
+    vagrant (3.2.2)
 
 GITHUBTARBALL
   remote: boxen/puppet-virtualbox
@@ -346,7 +346,7 @@ DEPENDENCIES
   tmux (= 1.0.2)
   transmission (= 1.1.0)
   tunnelblick (= 1.0.7)
-  vagrant (= 3.1.1)
+  vagrant (= 3.2.2)
   virtualbox (= 1.0.13)
   wget (= 1.0.1)
   xquartz (= 1.2.1)
