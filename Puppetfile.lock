@@ -3,7 +3,7 @@ GIT
   ref: master
   sha: 6639ee1e15febb4c1c2976fb0678ba2b46b69237
   specs:
-    php (0.0.1)
+    boxen-php (0.0.1)
 
 GITHUBTARBALL
   remote: boxen/puppet-appcleaner
@@ -294,6 +294,7 @@ DEPENDENCIES
   appcleaner (= 1.0.0)
   autoconf (= 1.0.0)
   boxen (= 3.10.1)
+  boxen-php (>= 0)
   brewcask (= 0.0.4)
   caffeine (= 1.0.0)
   chrome (= 1.1.2)
@@ -331,7 +332,6 @@ DEPENDENCIES
   osx (= 2.7.0)
   pcre (= 1.0.0)
   phantomjs (= 2.3.0)
-  php (>= 0)
   pkgconfig (= 1.0.0)
   pow (= 2.1.0)
   python (= 2.0.0)
