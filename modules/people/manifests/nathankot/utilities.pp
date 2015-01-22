@@ -23,6 +23,8 @@ class people::nathankot::utilities {
     ]
   }
 
+  nodejs::module { 'jsxhint': node_version => 'v0.10' }
+
   # Encrypted password store
   repository { "${home}/.password-store":
     source   => 'nathankot/pass',
