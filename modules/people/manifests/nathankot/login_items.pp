@@ -17,11 +17,6 @@ class people::nathankot::login_items {
     path => '/Applications/iTerm.app'
   }
 
-  osx_login_item { 'Dash':
-    name => 'Dash',
-    path => '/Applications/Dash.app'
-  }
-
   osx_login_item { 'Mjolnir':
     name => 'Mjolnir',
     path => '/Applications/Mjolnir.app'
