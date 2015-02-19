@@ -10,7 +10,6 @@ class common::haskell {
 # STUBBED FOR NOW. If you're getting cabal install errors please 
 # install haskell via their package first: https://www.haskell.org/platform/mac.html
 class haskell::platform {
-  haskell::cabal { 'cabal-install': }
 }
 
 # Allows requiring cabal packages, yay.
