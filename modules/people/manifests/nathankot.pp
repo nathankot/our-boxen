@@ -54,8 +54,8 @@ class people::nathankot {
   include common::haskell
 
   # Docker
-  include docker
-  include fig
+  # include docker
+  # include fig
 
   # Vagrant
   class { 'vagrant': version => '1.7.2' }
