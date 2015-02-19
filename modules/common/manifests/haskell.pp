@@ -20,7 +20,8 @@ define haskell::cabal (
   case $ensure {
     present: {
       exec { "cabal_install_${name}":
-        command => "cabal update; cabal install ${name}",
+        command => "cabal install ${name}",
+        timeout => 1800,
         unless  => "cabal list --simple-output --installed | grep -i -e ^${name}\$",
       }
     }
