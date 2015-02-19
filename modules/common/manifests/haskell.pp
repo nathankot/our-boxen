@@ -8,12 +8,13 @@ class common::haskell {
   haskell::cabal { 'hspec': }
 }
 
+# STUBBED FOR NOW. If you're getting cabal install errors please 
+# install haskell via their package first: https://www.haskell.org/platform/mac.html
 class haskell::platform {
   require homebrew
-  # STUBBED FOR NOW. If you're getting cabal install errors please 
-  # install haskell via their package first: https://www.haskell.org/platform/mac.html
 }
 
+# Allows requiring cabal packages, yay.
 define haskell::cabal (
   $ensure = present
 ) {
