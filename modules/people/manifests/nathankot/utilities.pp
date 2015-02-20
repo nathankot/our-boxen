@@ -3,7 +3,7 @@ class people::nathankot::utilities {
   $home = "/Users/${::boxen_user}"
 
   package { 'pass': ensure        => installed }
-  package { 'todo-txt': ensure    => installed }
+  # package { 'todo-txt': ensure    => installed }
   package { 'ledger': ensure      => installed }
   package { 'namebench': ensure   => installed }
   package { 'newsbeuter': ensure  => installed }
