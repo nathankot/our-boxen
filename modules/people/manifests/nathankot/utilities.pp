@@ -6,7 +6,6 @@ class people::nathankot::utilities {
   # package { 'todo-txt': ensure    => installed }
   package { 'ledger': ensure      => installed }
   package { 'namebench': ensure   => installed }
-  package { 'newsbeuter': ensure  => installed }
   package { 'bfg': ensure         => installed }
   package { 'tor': ensure         => installed }
   package { 'jrnl': ensure        => installed }
