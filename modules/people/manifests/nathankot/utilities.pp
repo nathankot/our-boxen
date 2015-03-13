@@ -8,7 +8,6 @@ class people::nathankot::utilities {
   package { 'namebench': ensure   => installed }
   package { 'bfg': ensure         => installed }
   package { 'tor': ensure         => installed }
-  package { 'jrnl': ensure        => installed }
   package { 'ngrok': ensure       => installed }
   package { 'transcrypt': ensure  => installed }
 
