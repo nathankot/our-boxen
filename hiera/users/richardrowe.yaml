@@ -1,3 +1,0 @@
----
-git::global_excludesfile: "/Users/%{::boxen_user}/.gitignore"
-

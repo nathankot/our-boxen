@@ -10,6 +10,7 @@ class people::nathankot::utilities {
   package { 'tor': ensure         => installed }
   package { 'ngrok': ensure       => installed }
   package { 'transcrypt': ensure  => installed }
+  package { 'emacs': ensure       => installed }
 
   package { 'weechat':
     ensure          => installed,

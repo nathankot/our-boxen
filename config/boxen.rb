@@ -5,7 +5,7 @@
 ENV['BOXEN_HOME'] = '/opt/boxen'
 
 # Change the repo boxen will use.
-ENV['BOXEN_REPO_NAME'] = 'richardrowe/our-boxen'
+ENV['BOXEN_REPO_NAME'] = 'nathankot/our-boxen'
 
 # Boxen binary packaging
 # ENV["BOXEN_S3_ACCESS_KEY"] = ''

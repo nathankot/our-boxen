@@ -21,11 +21,6 @@ class people::nathankot {
   # Folder Structure
   include people::nathankot::folders
 
-  # Projects
-  include projects::wedis
-  include projects::neighbourly
-  include projects::cforce
-
   # OSX Settings
   include common::osx
 
