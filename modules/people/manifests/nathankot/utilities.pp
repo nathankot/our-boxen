@@ -2,6 +2,9 @@ class people::nathankot::utilities {
 
   $home = "/Users/${::boxen_user}"
 
+  include global::utilities::fish
+  include global::utilities::emacs
+
   package { 'pass': ensure        => installed }
   # package { 'todo-txt': ensure    => installed }
   package { 'ledger': ensure      => installed }
@@ -10,7 +13,6 @@ class people::nathankot::utilities {
   package { 'tor': ensure         => installed }
   package { 'ngrok': ensure       => installed }
   package { 'transcrypt': ensure  => installed }
-  package { 'emacs': ensure       => installed }
 
   package { 'weechat':
     ensure          => installed,
