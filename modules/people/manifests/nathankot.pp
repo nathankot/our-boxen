@@ -3,7 +3,8 @@ class people::nathankot {
 
   $home = "/Users/${::boxen_user}"
 
-  include fish
+  # Fish
+  include global::utilities::fish
 
   # Apps
   include common::applications
