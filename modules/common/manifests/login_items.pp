@@ -12,9 +12,4 @@ class common::login_items {
     path => '/Applications/Google\ Drive.app'
   }
 
-  osx_login_item { 'Alfred':
-    name => 'Alfred',
-    path => '/Applications/Alfred\ 2.app'
-  }
-
 }
