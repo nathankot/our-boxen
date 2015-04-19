@@ -4,13 +4,13 @@ class people::nathankot::utilities {
 
   include global::utilities::fish
   include global::utilities::emacs
+  include global::utilities::tor
 
   package { 'pass': ensure        => installed }
   # package { 'todo-txt': ensure    => installed }
   package { 'ledger': ensure      => installed }
   package { 'namebench': ensure   => installed }
   package { 'bfg': ensure         => installed }
-  package { 'tor': ensure         => installed }
   package { 'ngrok': ensure       => installed }
   package { 'transcrypt': ensure  => installed }
 
