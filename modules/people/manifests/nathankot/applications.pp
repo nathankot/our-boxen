@@ -5,5 +5,4 @@ class people::nathankot::applications {
   include spotify
   include global::applications::mjolnir
   include global::applications::kaleidoscope
-  include global::applications::mongohub
 }
