@@ -20,15 +20,21 @@ class people::nathankot::ruby {
   }
 
   ruby_gem { 't':
+    ensure       => absent,
     gem          => 't',
     version      => '~> 2.7',
-    ruby_version => '*',
-    ensure       => absent
+    ruby_version => '*'
   }
 
   ruby_gem { 'reckon':
     gem          => 'reckon',
     version      => '~> 0.3',
+    ruby_version => '*'
+  }
+
+  ruby_get { 'yahoo-finance':
+    gem          => 'yahoo-finance',
+    version      => '~> 1.2',
     ruby_version => '*'
   }
 }
