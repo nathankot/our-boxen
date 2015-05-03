@@ -32,9 +32,9 @@ class people::nathankot::ruby {
     ruby_version => '*'
   }
 
-  ruby_get { 'yahoo-finance':
-    gem          => 'yahoo-finance',
-    version      => '~> 1.2',
+  ruby_gem { 'ledger_get_prices':
+    gem          => 'ledger_get_prices',
+    version      => '> 0',
     ruby_version => '*'
   }
 }
