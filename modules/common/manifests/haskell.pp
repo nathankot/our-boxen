@@ -5,6 +5,7 @@ class common::haskell {
   haskell::cabal { 'hledger': }
   haskell::cabal { 'hoogle': }
   haskell::cabal { 'hspec': }
+  haskell::cabal { 'hi': }
 }
 
 # STUBBED FOR NOW. If you're getting cabal install errors please 
