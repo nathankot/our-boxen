@@ -1,3 +1,5 @@
 ---
 git::global_excludesfile: "/Users/%{::boxen_user}/.gitignore"
+fig::version: '1.2.0'
+docker::version: '1.6.2'
 
