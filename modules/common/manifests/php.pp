@@ -4,8 +4,9 @@ class common::php {
 
   homebrew::tap { 'homebrew/dupes':  }
 
-  include php::5_4
-  include php::5_5_16
+  php::version { '5.4': }
+  php::version { '5.5.16': }
+
   include php::composer
   include memcached
 
