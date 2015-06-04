@@ -8,13 +8,6 @@ class common::osx {
     owner   => 'root'
   }
 
-  file { '/etc/sysctl.conf':
-    ensure  => 'present',
-    content => template('common/sysctl.conf'),
-    group   => 'wheel',
-    owner   => 'root'
-  }
-
   include osx::global::disable_key_press_and_hold
   include osx::global::enable_keyboard_control_access
   include osx::global::disable_remote_control_ir_receiver

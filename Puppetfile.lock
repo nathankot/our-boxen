@@ -234,6 +234,11 @@ GITHUBTARBALL
     sudo (1.0.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-sysctl
+  specs:
+    sysctl (1.0.1)
+
+GITHUBTARBALL
   remote: boxen/puppet-tmux
   specs:
     tmux (1.0.2)
@@ -335,6 +340,7 @@ DEPENDENCIES
   spotify (= 1.0.2)
   stdlib (= 4.2.1)
   sudo (= 1.0.0)
+  sysctl (= 1.0.1)
   tmux (= 1.0.2)
   transmission (= 1.1.0)
   tunnelblick (= 1.0.7)
