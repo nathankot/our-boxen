@@ -2,6 +2,8 @@ class common::utilities {
 
   include global::utilities::vim
   include tmux
+  include postgresql
+  include mongodb
   package { 'coreutils': ensure => installed }
   package { 'gnupg': ensure => installed }
   package { 'gnupg2': ensure => installed }

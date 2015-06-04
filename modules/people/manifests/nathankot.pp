@@ -48,7 +48,7 @@ class people::nathankot {
 
   # Docker
   include docker
-  include fig
+  package { 'docker-compose': }
 
   # Vagrant
   class { 'vagrant': version => '1.7.2' }
