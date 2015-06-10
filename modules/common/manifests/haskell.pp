@@ -5,8 +5,10 @@ class common::haskell {
   haskell::cabal { 'hledger': }
   haskell::cabal { 'hoogle': }
   haskell::cabal { 'hspec': }
-  haskell::cabal { 'stylish-haskell': }
   haskell::cabal { 'hi': }
+  haskell::cabal { 'stylish-haskell': }
+  haskell::cabal { 'scientific': }
+  haskell::cabal { 'structured-haskell-mode': }
 }
 
 # STUBBED FOR NOW. If you're getting cabal install errors please 
