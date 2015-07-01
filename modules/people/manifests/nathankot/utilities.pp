@@ -19,7 +19,6 @@ class people::nathankot::utilities {
     install_options => [ 
       '--with-perl',
       '--with-ruby',
-      '--with-python',
       '--with-lua'
     ]
   }
