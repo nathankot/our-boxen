@@ -40,6 +40,9 @@ class people::nathankot {
   include common::ruby
   include people::nathankot::ruby
 
+  # Python
+  include common::python
+
   # Haskell
   include common::haskell
 
