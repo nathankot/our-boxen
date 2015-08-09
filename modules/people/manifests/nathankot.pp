@@ -53,6 +53,4 @@ class people::nathankot {
   class { 'vagrant': version => '1.7.2' }
   vagrant::plugin { 'gatling-rsync': }
 
-  # Projects
-  include projects::daigo
 }
