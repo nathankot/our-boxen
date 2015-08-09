@@ -6,8 +6,15 @@ class global::utilities::tor {
     notify => Service['tor']
   }
 
+  file { '/Library/LaunchAgents/dev.tor.plist':
+    content => template('global/dev.tor.plist.erb'),
+    group => 'wheel',
+    owner => 'root',
+    notify => Service['tor']
+  }
+
   service { 'tor':
-    require => File["/Users/${::boxen_user}/Library/LaunchAgents/homebrew.mxcl.tor.plist"],
+    require => File["/Library/LaunchAgents/dev.tor.plist"],
     ensure => running
   }
 }
