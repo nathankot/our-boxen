@@ -1,6 +1,5 @@
 class common::haskell {
   include haskell::platform
-  haskell::cabal { 'hdevtools': }
   haskell::cabal { 'ghc-mod': }
   haskell::cabal { 'hledger': }
   haskell::cabal { 'hoogle': }
@@ -8,7 +7,6 @@ class common::haskell {
   haskell::cabal { 'hi': }
   haskell::cabal { 'stylish-haskell': }
   haskell::cabal { 'scientific': }
-  haskell::cabal { 'structured-haskell-mode': }
 }
 
 # STUBBED FOR NOW. If you're getting cabal install errors please 
