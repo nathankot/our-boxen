@@ -25,14 +25,14 @@ define haskell::cabal (
       exec { "cabal_install_${name}":
         command => "cabal install ${name}",
         timeout => 1800,
-        unless  => "cabal list --simple-output --installed | grep -ci ${name}",
+        unless  => "cabal list --simple-output --installed 2>&1 | grep -ci ${name}",
       }
     }
 
     default: {
       exec { "cabal_uninstall_${name}":
         command => "cabal uninstall ${name}",
-        onlyif  => "cabal list --simple-output --installed | grep -ci ${name}",
+        onlyif  => "cabal list --simple-output --installed 2>&1 | grep -ci ${name}",
       }
     }
   }
