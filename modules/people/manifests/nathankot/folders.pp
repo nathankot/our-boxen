@@ -4,27 +4,9 @@ class people::nathankot::folders {
 
   # Folders
   $development = "${home}/Development"
-  $sites = "${development}/Sites"
-  $apps = "${development}/Apps"
-  $packages = "${development}/Packages"
-  $designs = "${development}/Design"
+  $designs = "${home}/Design"
 
   file { $development: ensure => directory }
-
-  file { $sites:
-    ensure  => directory,
-    require => File[$development]
-  }
-
-  file { $apps:
-    ensure  => directory,
-    require => File[$development]
-  }
-
-  file { $packages:
-    ensure  => directory,
-    require => File[$development]
-  }
 
   file { $designs:
     ensure  => directory,
