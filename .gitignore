@@ -9,7 +9,4 @@
 /tmp
 /shared/*
 !/shared/README.md
-/vendor/gems/
-vendor/puppet/cache
-vendor/puppet/source/*
-!vendor/puppet/source/.gitkeep
+/vendor
