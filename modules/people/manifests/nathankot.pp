@@ -71,7 +71,7 @@ class people::nathankot {
 
   # Emacs conf
   repository { "${home}/.emacs.d":
-    source   => 'nathankot/.emacs.d',
+    source   => 'nathankot/dotemacs',
     ensure   => 'origin/master',
     provider => 'git'
   }
