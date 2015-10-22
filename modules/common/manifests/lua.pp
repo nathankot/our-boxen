@@ -1,12 +1,6 @@
 class common::lua {
   include homebrew
-  include common::lua::luarocks
   package { 'lua': }
-}
-
-class common::lua::luarocks {
-  require common::lua
-  package { 'luarocks': }
 }
 
 define common::lua::rock (
@@ -14,8 +8,6 @@ define common::lua::rock (
   $source = 'absent',
   $provider = 'default'
 ) {
-  require common::lua::luarocks
-
   if $name =~ /\-(\d|\.)+$/ {
     $real_name = regsubst($name,'^(.*)-(\d|\.)+$','\1')
     $rock_version = regsubst($name,'^(.*)-(\d+(\d|\.)+)$','\2')
