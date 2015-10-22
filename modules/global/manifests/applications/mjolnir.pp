@@ -12,7 +12,6 @@ class global::applications::mjolnir {
   common::lua::rock { 'mjolnir.hotkey': }
   common::lua::rock { 'mjolnir.application': }
   common::lua::rock { 'mjolnir.alert': }
-  common::lua::rock { 'mjolnir.lb.spotify': }
   common::lua::rock { 'mjolnir.tiling': }
 
 }

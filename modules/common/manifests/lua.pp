@@ -2,21 +2,11 @@ class common::lua {
   include homebrew
   include common::lua::luarocks
   package { 'lua': }
-
-  package { 'lua52':
-    require => Package[lua]
-  }
-
-  exec { 'brew link lua52 --overwrite':
-    require => Package[lua52]
-  }
 }
 
 class common::lua::luarocks {
   require common::lua
-  package { 'luarocks': 
-    install_options => ['--with-lua52']
-  }
+  package { 'luarocks': }
 }
 
 define common::lua::rock (

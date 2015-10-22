@@ -18,7 +18,6 @@ class people::nathankot {
   include caffeine
   include dropbox
   include googledrive
-  include skype
   include virtualbox
   include flux
   include shortcat
@@ -57,17 +56,31 @@ class people::nathankot {
   package { 'nodenv': }
   package { 'phpenv': }
   package { 'rbenv': }
+  package { 'haskell-stack': }
 
   # Ruby dependencies
   class { 'ruby::global': version => '2.1.2' }
-  ruby_gem { 'tmuxinator': gem => 'tmuxinator', version => '*', ruby_version => '*' }
-  ruby_gem { 'ghi': gem => 'ghi', version => '*', ruby_version => '*' }
-  ruby_gem { 'lunchy': gem => 'lunchy', version => '*', ruby_version => '*' }
-  ruby_gem { 'powder': gem => '*', version => '~> 0.2', ruby_version => '*' }
+  ruby_gem { 'tmuxinator': gem => 'tmuxinator', version => '~> 0.6.11', ruby_version => '*' }
+  ruby_gem { 'lunchy': gem => 'lunchy', version => '~> 0.10.4', ruby_version => '*' }
+  ruby_gem { 'powder': gem => 'powder', version => '~> 0.2', ruby_version => '*' }
 
   # Encrypted password store
   repository { "${home}/.password-store":
     source   => 'nathankot/pass',
+    ensure   => 'origin/master',
+    provider => 'git'
+  }
+
+  # Emacs conf
+  repository { "${home}/.emacs.d":
+    source   => 'nathankot/.emacs.d',
+    ensure   => 'origin/master',
+    provider => 'git'
+  }
+
+  # Dotfiles
+  repository { "${home}/.dotfiles":
+    source   => 'nathankot/dotfiles',
     ensure   => 'origin/master',
     provider => 'git'
   }

@@ -55,7 +55,6 @@ node default {
   # core modules, needed for most things
   include git
   include hub
-  include nginx
 
   include dnsmasq
   class { 'pow': domains => 'dev' }
