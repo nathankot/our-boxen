@@ -18,7 +18,6 @@ class people::nathankot {
   include caffeine
   include dropbox
   include googledrive
-  include virtualbox
   include flux
   include shortcat
   include global::applications::mjolnir
@@ -37,7 +36,7 @@ class people::nathankot {
   include common::osx
 
   # Utilities
-  include tmux
+  package { 'tmux': ensure => installed }
   package { 'tmux-mem-cpu-load': ensure => installed }
   package { 'coreutils': ensure => installed }
   package { 'gnupg': ensure => installed }
@@ -54,7 +53,6 @@ class people::nathankot {
 
   # Install env's, but don't install versions yet
   package { 'nodenv': }
-  package { 'phpenv': }
   package { 'rbenv': }
   package { 'haskell-stack': }
 
