@@ -54,7 +54,6 @@ class people::nathankot {
   # Install env's, but don't install versions yet
   package { 'nodenv': }
   package { 'rbenv': }
-  package { 'haskell-stack': }
 
   # Ruby dependencies
   class { 'ruby::global': version => '2.1.2' }
