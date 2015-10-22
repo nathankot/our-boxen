@@ -2,10 +2,28 @@
 class people::nathankot {
 
   $home = "/Users/${::boxen_user}"
+  $development = "${home}/Development"
+  $designs = "${home}/Design"
+
+  # Folders I use
+  file { $development: ensure => directory }
+  file { $designs: ensure  => directory }
 
   # Apps
-  include common::applications
-  include people::nathankot::applications
+  include global::applications::unarchiver
+  include iterm2::dev
+  include karabiner
+  include chrome
+  include appcleaner
+  include caffeine
+  include dropbox
+  include googledrive
+  include skype
+  include virtualbox
+  include flux
+  include shortcat
+  include global::applications::mjolnir
+  include global::applications::kaleidoscope
 
   # App Config
   include common::config::iterm
@@ -23,34 +41,38 @@ class people::nathankot {
   include common::osx
 
   # Utilities
-  include common::utilities
-  include people::nathankot::utilities
+  include tmux
+  package { 'tmux-mem-cpu-load': ensure => installed }
+  package { 'coreutils': ensure => installed }
+  package { 'gnupg': ensure => installed }
+  package { 'gnupg2': ensure => installed }
+  package { 'editorconfig': ensure => installed }
+  package { 'the_silver_searcher': ensure => installed }
+  package { 'ctags': ensure => installed }
+  package { 'reattach-to-user-namespace': ensure => installed, install_options => [ '--wrap-pbcopy-and-pbpaste' ] }
+  package { 'wget': ensure => installed }
+  include global::utilities::fish
+  include global::utilities::emacs
+  package { 'pass': ensure        => installed }
+  package { 'ledger': ensure      => installed }
 
-  # Heroku
-  include common::heroku
+  # Install env's, but don't install versions yet
+  package { 'nodenv': }
+  package { 'phpenv': }
+  package { 'rbenv': }
 
-  # PHP
-  include common::php
+  # Ruby dependencies
+  class { 'ruby::global': version => '2.1.2' }
+  ruby_gem { 'tmuxinator': gem => 'tmuxinator', version => '*', ruby_version => '*' }
+  ruby_gem { 'ghi': gem => 'ghi', version => '*', ruby_version => '*' }
+  ruby_gem { 'lunchy': gem => 'lunchy', version => '*', ruby_version => '*' }
+  ruby_gem { 'powder': gem => '*', version => '~> 0.2', ruby_version => '*' }
 
-  # Npm
-  include common::node
-  include people::nathankot::node
-
-  # Ruby
-  include common::ruby
-  include people::nathankot::ruby
-
-  # Python
-  include common::python
-
-  # Haskell
-  include common::haskell
-
-  # Docker
-  include common::docker
-
-  # Vagrant
-  class { 'vagrant': version => '1.7.2' }
-  vagrant::plugin { 'gatling-rsync': }
+  # Encrypted password store
+  repository { "${home}/.password-store":
+    source   => 'nathankot/pass',
+    ensure   => 'origin/master',
+    provider => 'git'
+  }
 
 }

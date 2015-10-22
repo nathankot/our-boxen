@@ -19,13 +19,6 @@ class common::osx {
   include osx::global::natural_mouse_scrolling
   include osx::finder::unhide_library
 
-  boxen::osx_defaults { 'Disable dashboard':
-    user   => $::boxen_user,
-    key    => 'mcx-disabled',
-    domain => 'com.apple.dashboard',
-    value  => true
-  }
-
   boxen::osx_defaults { 'Multi-list view default':
     user   => $::boxen_user,
     key    => 'FXPreferredViewStyle',
@@ -46,4 +39,5 @@ class common::osx {
     domain => 'com.apple.screensaver',
     value  => 0
   }
+
 }
