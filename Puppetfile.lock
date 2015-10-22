@@ -109,6 +109,11 @@ GITHUBTARBALL
     memcached (2.0.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-nginx
+  specs:
+    nginx (1.6.0)
+
+GITHUBTARBALL
   remote: boxen/puppet-nodejs
   specs:
     nodejs (5.0.0)
@@ -228,6 +233,7 @@ DEPENDENCIES
   libtool (= 1.0.0)
   memcached (= 2.0.0)
   module_data (= 0.0.4)
+  nginx (= 1.6.0)
   nodejs (= 5.0.0)
   openssl (= 1.0.0)
   openssl (= 1.0.0)
