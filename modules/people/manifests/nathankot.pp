@@ -34,9 +34,6 @@ class people::nathankot {
   include common::login_items
   include people::nathankot::login_items
 
-  # Folder Structure
-  include people::nathankot::folders
-
   # OSX Settings
   include common::osx
 
