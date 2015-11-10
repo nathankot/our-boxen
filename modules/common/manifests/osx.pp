@@ -26,6 +26,13 @@ class common::osx {
     value  => 'clmv'
   }
 
+  boxen::osx_defaults { 'Hide desktop items':
+    user   => $::boxen_user,
+    key    => 'CreateDesktop',
+    domain => 'com.apple.Finder',
+    value  => 0
+  }
+
   boxen::osx_defaults { 'Require password on screensaver':
     user   => $::boxen_user,
     key    => 'askForPassword',
