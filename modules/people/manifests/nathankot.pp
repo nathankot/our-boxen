@@ -44,6 +44,7 @@ class people::nathankot {
   package { 'coreutils': ensure => installed }
   package { 'gnupg': ensure => installed }
   package { 'gnupg2': ensure => installed }
+  package { 'cask': ensure => installed }
   package { 'editorconfig': ensure => installed }
   package { 'the_silver_searcher': ensure => installed }
   package { 'ctags': ensure => installed }
