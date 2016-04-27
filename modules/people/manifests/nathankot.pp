@@ -63,6 +63,7 @@ class people::nathankot {
 
   # Go
   package { 'go': ensure => installed }
+  package { 'glide': ensure => installed }
 
   # Ruby dependencies
   class { 'ruby::global': version => '2.1.2' }
