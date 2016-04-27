@@ -61,6 +61,9 @@ class people::nathankot {
   package { 'node-build': ensure => installed, install_options => [ '--HEAD' ] }
   package { 'rbenv': ensure => installed }
 
+  # Go
+  package { 'go': ensure => installed }
+
   # Ruby dependencies
   class { 'ruby::global': version => '2.1.2' }
   ruby_gem { 'tmuxinator': gem => 'tmuxinator', version => '~> 0.6.11', ruby_version => '*' }
