@@ -50,10 +50,17 @@ class people::nathankot {
   package { 'ctags': ensure => installed }
   package { 'reattach-to-user-namespace': ensure => installed, install_options => [ '--wrap-pbcopy-and-pbpaste' ] }
   package { 'wget': ensure => installed }
-  include global::utilities::fish
-  include global::utilities::emacs
+  package { 'httpie': ensure => installed }
   package { 'pass': ensure => installed }
   package { 'ledger': ensure => installed }
+  package { 'hub': ensure => installed }
+
+  package { 'docker': ensure => installed }
+  package { 'docker-compose': ensure => installed }
+  package { 'docker-machine': ensure => installed }
+
+  include global::utilities::fish
+  include global::utilities::emacs
 
   # Install env's, but don't install versions yet
   package { 'nodenv': ensure => installed }
@@ -64,6 +71,9 @@ class people::nathankot {
   # Go
   package { 'go': ensure => installed }
   package { 'glide': ensure => installed }
+
+  # Python
+  package { 'python3': ensure => installed }
 
   # Ruby dependencies
   class { 'ruby::global': version => '2.1.2' }
