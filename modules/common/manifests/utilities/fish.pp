@@ -1,4 +1,4 @@
-class global::utilities::fish {
+class common::utilities::fish {
   require boxen::config
 
   package { 'fish':

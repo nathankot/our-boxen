@@ -10,7 +10,7 @@ class people::nathankot {
   file { $designs: ensure  => directory }
 
   # Apps
-  include global::applications::unarchiver
+  include common::applications::unarchiver
   include iterm2::dev
   include karabiner
   include chrome
@@ -20,8 +20,8 @@ class people::nathankot {
   include googledrive
   include flux
   include shortcat
-  include global::applications::mjolnir
-  include global::applications::kaleidoscope
+  include common::applications::mjolnir
+  include common::applications::kaleidoscope
 
   # App Config
   include common::config::iterm
@@ -59,8 +59,8 @@ class people::nathankot {
   package { 'docker-compose': ensure => installed }
   package { 'docker-machine': ensure => installed }
 
-  include global::utilities::fish
-  include global::utilities::emacs
+  include common::utilities::fish
+  include common::utilities::emacs
 
   # Install env's, but don't install versions yet
   package { 'nodenv': ensure => installed }

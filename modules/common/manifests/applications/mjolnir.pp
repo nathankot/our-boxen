@@ -1,4 +1,4 @@
-class global::applications::mjolnir {
+class common::applications::mjolnir {
 
   require common::lua
 
