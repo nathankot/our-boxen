@@ -78,7 +78,6 @@ class people::nathankot {
   # Ruby dependencies
   class { 'ruby::global': version => '2.1.2' }
   ruby_gem { 'tmuxinator': gem => 'tmuxinator', version => '~> 0.6.11', ruby_version => '*' }
-  ruby_gem { 'lunchy': gem => 'lunchy', version => '~> 0.10.4', ruby_version => '*' }
   ruby_gem { 'powder': gem => 'powder', version => '~> 0.2', ruby_version => '*' }
 
   # Encrypted password store
