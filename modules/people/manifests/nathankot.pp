@@ -21,7 +21,6 @@ class people::nathankot {
   include flux
   include shortcat
   include common::applications::mjolnir
-  include common::applications::kaleidoscope
 
   # App Config
   include common::config::iterm
