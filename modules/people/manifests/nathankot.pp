@@ -25,7 +25,6 @@ class people::nathankot {
   # App Config
   include common::config::iterm
   include common::config::karabiner
-  include common::config::karabiner::remap
 
   # Login items
   include common::login_items
