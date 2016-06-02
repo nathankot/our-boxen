@@ -29,6 +29,6 @@ class common::config::iterm {
     user   => $::boxen_user,
     key    => 'PrefsCustomFolder',
     domain => 'com.googlecode.iterm2',
-    value  => "/Users/${::boxen_user}/.dotfiles/lib/iterm2"
+    value  => "/Users/${::boxen_user}/.dotfiles/.iterm2"
   }
 }
