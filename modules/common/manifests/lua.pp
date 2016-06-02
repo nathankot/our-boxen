@@ -40,19 +40,19 @@ define common::lua::rock (
 
   if $ensure == 'present' {
       if $source != 'absent' {
-        $rock_cmd = "luarocks install ${cachedir}/${name}.rock"
+        $rock_cmd = "luarocks install --tree=user ${cachedir}/${name}.rock"
       } else {
-        $rock_cmd = "luarocks install ${real_name} ${rock_version_str}"
+        $rock_cmd = "luarocks install --tree=user ${real_name} ${rock_version_str}"
       }
   } else {
-      $rock_cmd = "luarocks remove ${real_name} ${rock_version_str}"
+      $rock_cmd = "luarocks remove --tree=user ${real_name} ${rock_version_str}"
   }
 
   exec{"manage_rock_${name}":
       command => $rock_cmd
   }
 
-  $rock_cmd_check_str = "luarocks list | egrep -A1 '^${real_name}\\>' | tail -1 | egrep '\\<${rock_version_check_str}\\> \\(installed\\)'"
+  $rock_cmd_check_str = "luarocks --tree=user list | egrep -A1 '^${real_name}\\>' | tail -1 | egrep '\\<${rock_version_check_str}\\> \\(installed\\)'"
 
   if $ensure == 'present' {
       Exec["manage_rock_${name}"]{
