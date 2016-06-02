@@ -33,9 +33,6 @@ class people::nathankot {
   # OSX Settings
   include common::osx
 
-  # Homebrew taps
-  homebrew::tap { 'jawshooah/nodenv': }
-
   # Utilities
   package { 'tmux': ensure => installed }
   package { 'tmux-mem-cpu-load': ensure => installed }
@@ -62,7 +59,6 @@ class people::nathankot {
 
   # Install env's, but don't install versions yet
   package { 'nodenv': ensure => installed }
-  package { 'jawshooah/nodenv/nodenv': ensure => installed }
   package { 'node-build': ensure => installed, install_options => [ '--HEAD' ] }
   package { 'rbenv': ensure => installed }
 
