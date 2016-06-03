@@ -66,8 +66,11 @@ class people::nathankot {
   package { 'mysql': ensure => installed }
 
   
-  # Install env's, but don't install versions yet
+  # Ruby
   include ruby # installs rbenv
+  class { 'ruby::global': version => '2.2.2' }
+
+  # Node
   package { 'nodenv': ensure => installed }
   package { 'node-build': ensure => installed, install_options => [ '--HEAD' ] }
 
