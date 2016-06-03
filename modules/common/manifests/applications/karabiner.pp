@@ -21,11 +21,6 @@ class common::applications::karabiner {
     content => '
       <?xml version="1.0"?>
       <root>
-        <appdef>
-          <appname>ITERM</appname>
-          <equal>com.googlecode.iterm2</equal>
-        </appdef>
-
         <item>
           <name>Tab Numpad</name>
           <item>
