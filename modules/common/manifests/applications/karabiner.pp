@@ -1,8 +1,10 @@
-class common::config::karabiner {
+class common::applications::karabiner {
 
-  karabiner::set { 'repeat.wait': value => '43' }
-  karabiner::set { 'parameter.holdingkeytokey_wait': value => '150' }
-  karabiner::set { 'parameter.keyoverlaidmodifier_timeout': value => '300' }
+  include karabiner
+
+  karabiner::exec { 'set repeat.wait 30': }
+  karabiner::exec { 'set parameter.holdingkeytokey_wait 150': }
+  karabiner::exec { 'set parameter.keyoverlaidmodifier_timeout 300': }
 
   karabiner::private_xml { 'private.xml':
     content => '

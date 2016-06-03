@@ -1,4 +1,5 @@
-class common::config::iterm {
+class common::applications::iterm {
+  include iterm2::dev
   boxen::osx_defaults { 'Iterm2 Preferences Folder':
     user   => $::boxen_user,
     key    => 'PrefsCustomFolder',
