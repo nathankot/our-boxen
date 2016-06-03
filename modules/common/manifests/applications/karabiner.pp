@@ -2,9 +2,20 @@ class common::applications::karabiner {
 
   include karabiner
 
-  karabiner::exec { 'set repeat.wait 30': }
+  karabiner::exec { 'set repeat.wait 43': }
   karabiner::exec { 'set parameter.holdingkeytokey_wait 150': }
   karabiner::exec { 'set parameter.keyoverlaidmodifier_timeout 300': }
+  
+  karabiner::remap { 'notsave.automatically_enable_keyboard_device': }
+  karabiner::remap { 'general.dont_remap_any_pointing': }
+  karabiner::remap { 'escape2backquote': }
+  karabiner::remap { 'controlL2controlL_escape': }
+  karabiner::remap { 'shiftparens': }
+
+  karabiner::enable { 'private.tmux_simultaneous': }
+  karabiner::enable { 'notsave.tab_numpad_numbers': }
+  karabiner::enable { 'private.tab_numpad': }
+  karabiner::enable { 'private.vim_on_f': }
 
   karabiner::private_xml { 'private.xml':
     content => '
@@ -65,13 +76,5 @@ class common::applications::karabiner {
       </root>
     '
   }
-  
-  karabiner::remap { 'private.tmux_simultaneous': }
-  karabiner::remap { 'notsave.tab_numpad_numbers': }
-  karabiner::remap { 'private.tab_numpad': }
-  karabiner::remap { 'remap.escape2backquote': }
-  karabiner::remap { 'remap.controlL2controlL_escape': }
-  karabiner::remap { 'private.vim_on_f': }
-  karabiner::remap { 'remap.shiftparens': }
 
 }
