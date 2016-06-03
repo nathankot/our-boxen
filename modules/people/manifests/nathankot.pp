@@ -11,8 +11,7 @@ class people::nathankot {
 
   # Apps
   include common::applications::unarchiver
-  include iterm2::dev
-  include karabiner
+  include common::applications::iterm
   include chrome
   include appcleaner
   include caffeine
@@ -21,10 +20,7 @@ class people::nathankot {
   include flux
   include shortcat
   include common::applications::mjolnir
-
-  # App Config
-  include common::config::iterm
-  include common::config::karabiner
+  include common::applications::karabiner
 
   # Login items
   include common::login_items
