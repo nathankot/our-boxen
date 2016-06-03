@@ -10,13 +10,14 @@ class common::osx {
 
   include osx::global::enable_keyboard_control_access
   include osx::global::disable_remote_control_ir_receiver
+  include osx::global::disable_key_press_and_hold
   include osx::global::tap_to_click
+  include osx::global::natural_mouse_scrolling
+  include osx::keyboard::capslock_to_control
+  include osx::finder::unhide_library
   include osx::dock::autohide
   include osx::disable_app_quarantine
   include osx::no_network_dsstores
-  include osx::keyboard::capslock_to_control
-  include osx::global::natural_mouse_scrolling
-  include osx::finder::unhide_library
 
   boxen::osx_defaults { 'Multi-list view default':
     user   => $::boxen_user,
