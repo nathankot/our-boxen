@@ -6,7 +6,7 @@ class common::applications::karabiner {
 
   karabiner::set { 'repeat.wait': value => '43', profile => 'CODE' }
   karabiner::set { 'parameter.holdingkeytokey_wait': value => '150', profile => 'CODE' }
-  karabiner::set { 'parameter.keyoverlaidmodifier_timeout': value => '300', profile => 'CODE' }
+  karabiner::set { 'parameter.keyoverlaidmodifier_timeout': value => '100', profile => 'CODE' }
 
   karabiner::remap { 'notsave.automatically_enable_keyboard_device': }
   karabiner::remap { 'general.dont_remap_any_pointing': }
