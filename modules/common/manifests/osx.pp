@@ -22,14 +22,14 @@ class common::osx {
   boxen::osx_defaults { 'Multi-list view default':
     user   => $::boxen_user,
     key    => 'FXPreferredViewStyle',
-    domain => 'com.apple.Finder',
+    domain => 'com.apple.finder',
     value  => 'clmv'
   }
 
   boxen::osx_defaults { 'Hide desktop items':
     user   => $::boxen_user,
     key    => 'CreateDesktop',
-    domain => 'com.apple.Finder',
+    domain => 'com.apple.finder',
     value  => 0
   }
 
