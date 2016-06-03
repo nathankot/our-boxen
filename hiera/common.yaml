@@ -13,3 +13,4 @@ mysql::config::port: 3306
 postgresql::port: 5432
 memcached::port: "11211"
 dnsmasq::tld: boxen
+ruby::rbenv::prefix: "/Users/%{boxen_user}/.rbenv"

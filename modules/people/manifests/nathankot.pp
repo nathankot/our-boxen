@@ -54,9 +54,9 @@ class people::nathankot {
   include common::utilities::emacs
 
   # Install env's, but don't install versions yet
+  include ruby # installs rbenv
   package { 'nodenv': ensure => installed }
   package { 'node-build': ensure => installed, install_options => [ '--HEAD' ] }
-  package { 'rbenv': ensure => installed }
 
   # Go
   package { 'go': ensure => installed }
@@ -64,11 +64,6 @@ class people::nathankot {
 
   # Python
   package { 'python3': ensure => installed }
-
-  # Ruby dependencies
-  class { 'ruby::global': version => '2.1.2' }
-  ruby_gem { 'tmuxinator': gem => 'tmuxinator', version => '~> 0.6.11', ruby_version => '*' }
-  ruby_gem { 'powder': gem => 'powder', version => '~> 0.2', ruby_version => '*' }
 
   # Encrypted password store
   repository { "${home}/.password-store":
