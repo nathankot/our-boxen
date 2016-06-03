@@ -79,6 +79,7 @@ class people::nathankot {
   package { 'glide': ensure => installed }
 
   # Python
+  package { 'python': ensure => installed }
   package { 'python3': ensure => installed }
 
   # Encrypted password store
