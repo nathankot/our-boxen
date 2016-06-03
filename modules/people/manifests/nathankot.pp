@@ -45,7 +45,6 @@ class people::nathankot {
   package { 'ledger': ensure => installed }
   package { 'hub': ensure => installed }
   package { 'transcrypt': ensure => installed }
-  package { 'maven': ensure => installed }
   package { 'mcrypt': ensure => installed }
   package { 'tor': ensure => installed }
   package { 'watch': ensure => installed }
