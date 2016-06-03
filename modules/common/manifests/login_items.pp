@@ -1,7 +1,5 @@
 class common::login_items {
 
-  include karabiner::login_item
-
   osx_login_item { 'Dropbox':
     name => 'Dropbox',
     path => '/Applications/Dropbox.app'
