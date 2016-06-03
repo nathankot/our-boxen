@@ -2,6 +2,8 @@ class common::applications::karabiner {
 
   include karabiner
 
+  karabiner::profile { 'CODE': }
+
   karabiner::exec { 'set repeat.wait 43': }
   karabiner::exec { 'set parameter.holdingkeytokey_wait 150': }
   karabiner::exec { 'set parameter.keyoverlaidmodifier_timeout 300': }
