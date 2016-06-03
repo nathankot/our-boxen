@@ -38,13 +38,21 @@ class people::nathankot {
   package { 'cask': ensure => installed }
   package { 'editorconfig': ensure => installed }
   package { 'the_silver_searcher': ensure => installed }
-  package { 'ctags': ensure => installed }
   package { 'reattach-to-user-namespace': ensure => installed, install_options => [ '--wrap-pbcopy-and-pbpaste' ] }
   package { 'wget': ensure => installed }
   package { 'httpie': ensure => installed }
   package { 'pass': ensure => installed }
   package { 'ledger': ensure => installed }
   package { 'hub': ensure => installed }
+  package { 'transcrypt': ensure => installed }
+  package { 'maven': ensure => installed }
+  package { 'mcrypt': ensure => installed }
+  package { 'tor': ensure => installed }
+  package { 'watch': ensure => installed }
+  package { 'libtool': ensure => installed }
+  package { 'x264': ensure => installed }
+  package { 'jq': ensure => installed }
+  package { 'spark': ensure => installed }
 
   package { 'docker': ensure => installed }
   package { 'docker-compose': ensure => installed }
@@ -53,6 +61,12 @@ class people::nathankot {
   include common::utilities::fish
   include common::utilities::emacs
 
+  # Databases
+  package { 'postgresql': ensure => installed }
+  package { 'mongodb26': ensure => installed }
+  package { 'mysql': ensure => installed }
+
+  
   # Install env's, but don't install versions yet
   include ruby # installs rbenv
   package { 'nodenv': ensure => installed }
