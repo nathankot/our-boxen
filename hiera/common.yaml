@@ -14,4 +14,5 @@ postgresql::port: 5432
 memcached::port: "11211"
 dnsmasq::tld: boxen
 ruby::rbenv::prefix: "/Users/%{boxen_user}/.rbenv"
+ruby::build::prefix: "/Users/%{boxen_user}/.ruby-build"
 git::global_excludesfile: "~/.gitignore"
