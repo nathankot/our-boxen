@@ -8,7 +8,6 @@ class common::osx {
     owner   => 'root'
   }
 
-  include osx::global::disable_key_press_and_hold
   include osx::global::enable_keyboard_control_access
   include osx::global::disable_remote_control_ir_receiver
   include osx::global::tap_to_click
