@@ -4,10 +4,10 @@ class common::applications::karabiner {
 
   karabiner::profile { 'CODE': }
 
-  karabiner::exec { 'set repeat.wait 43': }
-  karabiner::exec { 'set parameter.holdingkeytokey_wait 150': }
-  karabiner::exec { 'set parameter.keyoverlaidmodifier_timeout 300': }
-  
+  karabiner::set { 'repeat.wait': value => '43', profile => 'CODE' }
+  karabiner::set { 'parameter.holdingkeytokey_wait': value => '150', profile => 'CODE' }
+  karabiner::set { 'parameter.keyoverlaidmodifier_timeout': value => '300', profile => 'CODE' }
+
   karabiner::remap { 'notsave.automatically_enable_keyboard_device': }
   karabiner::remap { 'general.dont_remap_any_pointing': }
   karabiner::remap { 'escape2backquote': }
