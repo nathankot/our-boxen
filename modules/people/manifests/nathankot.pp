@@ -3,10 +3,14 @@ class people::nathankot {
 
   $home = "/Users/${::boxen_user}"
   $development = "${home}/Development"
+  $development_src = "${home}/Development/src"
+  $development_bin = "${home}/Development/bin"
   $designs = "${home}/Design"
 
   # Folders I use
   file { $development: ensure => directory }
+  file { $development_src: ensure => directory, require => File[$development] }
+  file { $development_bin: ensure => directory, require => File[$development] }
   file { $designs: ensure  => directory }
 
   # Apps
