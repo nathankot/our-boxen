@@ -9,10 +9,10 @@ class common::applications::mjolnir {
   }
 
   # Required for Mjolnir
-  common::lua::rock { 'mjolnir.hotkey': }
-  common::lua::rock { 'mjolnir.application': }
-  common::lua::rock { 'mjolnir.alert': }
-  common::lua::rock { 'mjolnir.tiling': }
+  common::lua::rock { 'mjolnir.hotkey-0.3': }
+  common::lua::rock { 'mjolnir.application-0.3': }
+  common::lua::rock { 'mjolnir.alert-0.2': }
+  common::lua::rock { 'mjolnir.tiling-0.3.1': }
   common::lua::rock { 'mjolnir.lx.lockscreen-0.1': }
 
 }
