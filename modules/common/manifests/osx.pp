@@ -47,4 +47,11 @@ class common::osx {
     value  => 0
   }
 
+  boxen::osx_defaults { 'Disable expose animation':
+    user   => $::boxen_user,
+    key    => 'expose-animation-duration',
+    domain => 'com.apple.dock',
+    value  => 0
+  }
+
 }
