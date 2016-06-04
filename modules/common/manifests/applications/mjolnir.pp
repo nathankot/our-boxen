@@ -13,5 +13,6 @@ class common::applications::mjolnir {
   common::lua::rock { 'mjolnir.application': }
   common::lua::rock { 'mjolnir.alert': }
   common::lua::rock { 'mjolnir.tiling': }
+  common::lua::rock { 'mjolnir.lx.lockscreen-0.1': }
 
 }
