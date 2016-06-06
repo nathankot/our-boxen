@@ -8,8 +8,6 @@ class common::applications::karabiner {
   karabiner::set { 'parameter.holdingkeytokey_wait': value => '50', profile => 'CODE' }
   karabiner::set { 'parameter.keyoverlaidmodifier_timeout': value => '100', profile => 'CODE' }
 
-  karabiner::remap { 'notsave.automatically_enable_keyboard_device': }
-  karabiner::remap { 'general.dont_remap_any_pointing': }
   karabiner::remap { 'escape2backquote': }
   karabiner::remap { 'controlL2controlL_escape': }
   karabiner::remap { 'shiftparens': }
