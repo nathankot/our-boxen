@@ -4,6 +4,6 @@ class common::applications::iterm {
     user   => $::boxen_user,
     key    => 'PrefsCustomFolder',
     domain => 'com.googlecode.iterm2',
-    value  => "/Users/${::boxen_user}/.dotfiles/.iterm2"
+    value  => "/Users/${::boxen_user}/.iterm2"
   }
 }
