@@ -56,6 +56,7 @@ class people::nathankot {
   package { 'x264': ensure => installed }
   package { 'jq': ensure => installed }
   package { 'spark': ensure => installed }
+  package { 'aspell': ensure => installed }
 
   package { 'docker': ensure => installed }
   package { 'docker-compose': ensure => installed }
