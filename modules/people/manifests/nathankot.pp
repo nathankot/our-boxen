@@ -40,6 +40,7 @@ class people::nathankot {
   package { 'gnupg': ensure => installed }
   package { 'gnupg2': ensure => installed }
   package { 'cask': ensure => installed }
+  package { 'carthage': ensure => installed }
   package { 'editorconfig': ensure => installed }
   package { 'the_silver_searcher': ensure => installed }
   package { 'reattach-to-user-namespace': ensure => installed, install_options => [ '--wrap-pbcopy-and-pbpaste' ] }
