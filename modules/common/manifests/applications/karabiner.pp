@@ -8,6 +8,7 @@ class common::applications::karabiner {
   karabiner::set { 'parameter.holdingkeytokey_wait': value => '50', profile => 'CODE' }
   karabiner::set { 'parameter.keyoverlaidmodifier_timeout': value => '100', profile => 'CODE' }
 
+  karabiner::remap { 'commandR2forwarddelete': }
   karabiner::remap { 'escape2backquote': }
   karabiner::remap { 'controlL2controlL_escape': }
   karabiner::remap { 'shiftparens': }
