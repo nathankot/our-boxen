@@ -57,7 +57,7 @@ node default {
   include hub
 
   include dnsmasq
-  class { 'pow': domains => 'dev' }
+  # class { 'pow': domains => 'dev' }
 
   include openssl
 
