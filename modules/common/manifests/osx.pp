@@ -19,6 +19,11 @@ class common::osx {
   include osx::disable_app_quarantine
   include osx::no_network_dsstores
 
+  osx::dock::hot_corner { 'Sleep on bottom right':
+    action => 'Put Display to Sleep',
+    position => 'Bottom Right'
+  }
+
   boxen::osx_defaults { 'Multi-list view default':
     user   => $::boxen_user,
     key    => 'FXPreferredViewStyle',
