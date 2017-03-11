@@ -34,34 +34,34 @@ class people::nathankot {
   include common::osx
 
   # Utilities
-  package { 'tmux': ensure => installed }
-  package { 'tmux-mem-cpu-load': ensure => installed }
-  package { 'coreutils': ensure => installed }
-  package { 'gnupg': ensure => installed }
-  package { 'gnupg2': ensure => installed }
-  package { 'cask': ensure => installed }
-  package { 'carthage': ensure => installed }
-  package { 'editorconfig': ensure => installed }
-  package { 'the_silver_searcher': ensure => installed }
-  package { 'reattach-to-user-namespace': ensure => installed, install_options => [ '--wrap-pbcopy-and-pbpaste' ] }
-  package { 'wget': ensure => installed }
-  package { 'httpie': ensure => installed }
-  package { 'pass': ensure => installed }
-  package { 'ledger': ensure => installed }
-  package { 'hub': ensure => installed }
-  package { 'transcrypt': ensure => installed }
-  package { 'mcrypt': ensure => installed }
-  package { 'tor': ensure => installed }
-  package { 'watch': ensure => installed }
-  package { 'libtool': ensure => installed }
-  package { 'x264': ensure => installed }
-  package { 'jq': ensure => installed }
-  package { 'spark': ensure => installed }
   package { 'aspell': ensure => installed }
-
+  package { 'carthage': ensure => installed }
+  package { 'cask': ensure => installed }
+  package { 'coreutils': ensure => installed }
   package { 'docker': ensure => installed }
   package { 'docker-compose': ensure => installed }
   package { 'docker-machine': ensure => installed }
+  package { 'editorconfig': ensure => installed }
+  package { 'gnupg': ensure => installed }
+  package { 'gnupg2': ensure => installed }
+  package { 'icdiff': ensure => installed }
+  package { 'httpie': ensure => installed }
+  package { 'hub': ensure => installed }
+  package { 'jq': ensure => installed }
+  package { 'ledger': ensure => installed }
+  package { 'libtool': ensure => installed }
+  package { 'mcrypt': ensure => installed }
+  package { 'pass': ensure => installed }
+  package { 'reattach-to-user-namespace': ensure => installed, install_options => [ '--wrap-pbcopy-and-pbpaste' ] }
+  package { 'spark': ensure => installed }
+  package { 'the_silver_searcher': ensure => installed }
+  package { 'tmux': ensure => installed }
+  package { 'tmux-mem-cpu-load': ensure => installed }
+  package { 'tor': ensure => installed }
+  package { 'transcrypt': ensure => installed }
+  package { 'watch': ensure => installed }
+  package { 'wget': ensure => installed }
+  package { 'x264': ensure => installed }
 
   include common::utilities::fish
   include common::utilities::emacs
