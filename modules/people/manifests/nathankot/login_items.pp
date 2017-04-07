@@ -5,9 +5,4 @@ class people::nathankot::login_items {
     path => '/Applications/Shortcat.app'
   }
 
-  osx_login_item { 'Mjolnir':
-    name => 'Mjolnir',
-    path => '/Applications/Mjolnir.app'
-  }
-
 }

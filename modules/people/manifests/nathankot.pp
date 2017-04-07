@@ -22,7 +22,6 @@ class people::nathankot {
   include dropbox
   include googledrive
   include shortcat
-  include common::applications::mjolnir
 
   # Login items
   include common::login_items
