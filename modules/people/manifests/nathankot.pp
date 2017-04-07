@@ -21,7 +21,6 @@ class people::nathankot {
   include caffeine
   include dropbox
   include googledrive
-  include flux
   include shortcat
   include common::applications::mjolnir
 
