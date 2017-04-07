@@ -1,6 +1,4 @@
 class people::nathankot::login_items {
-  # Karabiner is automatically made a login item
-  # by it's package.
 
   osx_login_item { 'Shortcat':
     name => 'Shortcat',

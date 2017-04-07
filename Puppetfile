@@ -61,7 +61,6 @@ github "xquartz",     "1.2.1"
 # My personal modules
 
 github "iterm2",      "1.2.5"
-github 'karabiner',   "1.0.8"
 github 'dropbox',     "1.3.0"
 github 'osx',         "2.7.0"
 github 'chrome',      "1.1.2"

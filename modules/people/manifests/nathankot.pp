@@ -24,7 +24,6 @@ class people::nathankot {
   include flux
   include shortcat
   include common::applications::mjolnir
-  include common::applications::karabiner
 
   # Login items
   include common::login_items
