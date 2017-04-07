@@ -13,6 +13,7 @@ class common::osx {
   include osx::global::disable_key_press_and_hold
   include osx::global::tap_to_click
   include osx::global::natural_mouse_scrolling
+  include osx::global::disable_autocorrect
   include osx::keyboard::capslock_to_control
   include osx::finder::unhide_library
   include osx::dock::autohide
@@ -56,7 +57,7 @@ class common::osx {
     user   => $::boxen_user,
     key    => 'expose-animation-duration',
     domain => 'com.apple.dock',
-    value  => 0
+    value  => 0.1
   }
 
 }
