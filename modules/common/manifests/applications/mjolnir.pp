@@ -13,5 +13,6 @@ class common::applications::mjolnir {
   common::lua::rock { 'mjolnir.application-0.3': }
   common::lua::rock { 'mjolnir.alert-0.2': }
   common::lua::rock { 'mjolnir.tiling-0.3.1': }
+  common::lua::rock { 'mjolnir._asm.eventtap': }
 
 }
