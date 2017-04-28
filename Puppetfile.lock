@@ -159,11 +159,6 @@ GITHUBTARBALL
     shortcat (1.0.6)
 
 GITHUBTARBALL
-  remote: boxen/puppet-skype
-  specs:
-    skype (1.0.8)
-
-GITHUBTARBALL
   remote: boxen/puppet-sudo
   specs:
     sudo (1.0.0)
@@ -234,7 +229,6 @@ DEPENDENCIES
   repository (= 2.4.1)
   ruby (= 8.5.4)
   shortcat (= 1.0.6)
-  skype (= 1.0.8)
   stdlib (= 4.7.0)
   sudo (= 1.0.0)
   sysctl (= 1.0.1)
