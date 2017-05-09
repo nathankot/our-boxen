@@ -40,6 +40,7 @@ class people::nathankot {
   package { 'docker-machine': ensure => installed }
   package { 'editorconfig': ensure => installed }
   package { 'gnupg': ensure => installed }
+  package { 'pinentry-mac': ensure => installed }
   package { 'icdiff': ensure => installed }
   package { 'httpie': ensure => installed }
   package { 'hub': ensure => installed }
