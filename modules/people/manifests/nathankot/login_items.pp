@@ -1,10 +1,5 @@
 class people::nathankot::login_items {
 
-  osx_login_item { 'Shortcat':
-    name => 'Shortcat',
-    path => '/Applications/Shortcat.app'
-  }
-
   osx_login_item { 'Hammerspoon':
     name => 'Hammerspoon',
     path => '/Applications/Hammerspoon.app'

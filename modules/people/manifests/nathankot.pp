@@ -21,7 +21,6 @@ class people::nathankot {
   include caffeine
   include dropbox
   include googledrive
-  include shortcat
 
   # Login items
   include common::login_items
