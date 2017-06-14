@@ -107,4 +107,11 @@ class people::nathankot {
     provider => 'git'
   }
 
+  # Hammerspoon module
+  repository { "${home}/.hammerspoon/hs/hs.tiling":
+    source => 'dsanson/hs.tiling',
+    ensure => 'origin/master',
+    provider => 'git'
+  }
+
 }
