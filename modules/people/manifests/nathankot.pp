@@ -88,7 +88,7 @@ class people::nathankot {
 
   # Encrypted password store
   repository { "${home}/.password-store":
-    source   => 'nathankot/pass',
+    source   => 'git://github.com/nathankot/pass.git',
     ensure   => 'origin/master',
     provider => 'git'
   }
