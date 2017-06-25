@@ -3,7 +3,6 @@ class common::utilities::fish {
 
   package { 'fish':
     ensure => installed,
-    install_options => ['--HEAD']
   }
 
   file_line { 'add fish to /etc/shells':
