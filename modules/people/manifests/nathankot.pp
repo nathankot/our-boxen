@@ -45,6 +45,7 @@ class people::nathankot {
   package { 'hub': ensure => installed }
   package { 'jq': ensure => installed }
   package { 'ledger': ensure => installed }
+  package { 'hledger': ensure => installed }
   package { 'libtool': ensure => installed }
   package { 'mcrypt': ensure => installed }
   package { 'pass': ensure => installed }
