@@ -72,7 +72,6 @@ class people::nathankot {
   include ruby # installs rbenv
   class { 'ruby::global': version => '2.2.2' }
   ruby::version { '2.3.1': }
-  ruby::version { '1.9.3-p194': }
 
   # Node
   package { 'nodenv': ensure => installed }
