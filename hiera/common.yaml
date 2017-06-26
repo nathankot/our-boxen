@@ -17,4 +17,6 @@ ruby::rbenv::prefix: "/Users/%{boxen_user}/.rbenv"
 ruby::build::prefix: "/Users/%{boxen_user}/.ruby-build"
 ruby::rbenv::ensure: "v1.0.0"
 ruby::build::ensure: "v20160602"
+
 git::global_excludesfile: "~/.gitignore"
+git::credentialhelper: "%{boxen::config::homebrewdir}/bin/git-credential-osxkeychain"
