@@ -48,7 +48,6 @@ class people::nathankot {
   package { 'libtool': ensure => installed }
   package { 'mcrypt': ensure => installed }
   package { 'pass': ensure => installed }
-  package { 'reattach-to-user-namespace': ensure => installed, install_options => [ '--wrap-pbcopy-and-pbpaste' ] }
   package { 'spark': ensure => installed }
   package { 'the_silver_searcher': ensure => installed }
   package { 'tmux': ensure => installed }
