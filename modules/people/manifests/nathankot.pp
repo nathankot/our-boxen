@@ -14,13 +14,12 @@ class people::nathankot {
   file { $designs: ensure  => directory }
 
   # Apps
-  include common::applications::unarchiver
   include common::applications::iterm
-  include chrome
-  include appcleaner
-  include caffeine
-  include dropbox
-  include googledrive
+  package { 'google-backup-and-sync': provider => brewcask, ensure => installed }
+  package { 'google-chrome': provider => brewcask, ensure => installed }
+  package { 'appcleaner': provider => brewcask, ensure => installed }
+  package { 'dropbox': provider => brewcask, ensure => installed }
+  package { 'the-unarchiver': provider => brewcask, ensure => installed }
 
   # Login items
   include common::login_items
@@ -67,7 +66,6 @@ class people::nathankot {
   package { 'postgresql': ensure => installed }
   package { 'mongodb26': ensure => installed }
   package { 'mysql': ensure => installed }
-
   
   # Ruby
   include ruby # installs rbenv

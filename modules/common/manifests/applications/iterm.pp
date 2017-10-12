@@ -1,5 +1,5 @@
 class common::applications::iterm {
-  include iterm2::dev
+  package { 'iterm2': provider => brewcask, ensure => installed }
   boxen::osx_defaults { 'Iterm2 Preferences Folder':
     user   => $::boxen_user,
     key    => 'PrefsCustomFolder',

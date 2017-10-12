@@ -60,13 +60,7 @@ github "xquartz",     "1.2.1"
 
 # My personal modules
 
-github "iterm2",      "1.2.5"
-github 'dropbox',     "1.3.0"
 github 'osx',         "2.7.0"
-github 'chrome',      "1.1.2"
-github 'appcleaner',  "1.0.0"
-github 'caffeine',    "1.0.0"
-github 'googledrive', "1.0.2"
 github 'openssl',     "1.0.0"
 github 'pow',         "2.1.0"
 github "wget",        "1.0.1"
