@@ -33,9 +33,6 @@ class people::nathankot {
   package { 'carthage': ensure => installed }
   package { 'cask': ensure => installed }
   package { 'coreutils': ensure => installed }
-  package { 'docker': ensure => installed }
-  package { 'docker-compose': ensure => installed }
-  package { 'docker-machine': ensure => installed }
   package { 'editorconfig': ensure => installed }
   package { 'gnupg': ensure => installed }
   package { 'pinentry-mac': ensure => installed }
