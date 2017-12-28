@@ -61,7 +61,6 @@ github "xquartz",     "1.2.1"
 # My personal modules
 
 github 'osx',         "2.7.0"
-github 'openssl',     "1.0.0"
 github 'pow',         "2.1.0"
 github "wget",        "1.0.1"
 github "autoconf",    "1.0.0"
