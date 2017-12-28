@@ -30,7 +30,6 @@ class people::nathankot {
 
   # Utilities
   package { 'aspell': ensure => installed }
-  package { 'carthage': ensure => installed }
   package { 'cask': ensure => installed }
   package { 'coreutils': ensure => installed }
   package { 'editorconfig': ensure => installed }
@@ -61,7 +60,6 @@ class people::nathankot {
 
   # Databases
   package { 'postgresql': ensure => installed }
-  package { 'mongodb26': ensure => installed }
   package { 'mysql': ensure => installed }
   
   # Ruby
