@@ -3,10 +3,52 @@ GITHUBTARBALL
   specs:
     autoconf (1.0.0)
 
-GITHUBTARBALL
-  remote: boxen/puppet-boxen
+GIT
+  remote: https://github.com/boxen/puppet-dnsmasq.git
+  ref: high-sierra
+  sha: 00f58fb06f4ebb5821385d87f0e9f58d10028333
   specs:
-    boxen (3.13.0)
+    puppet-dnsmasq (0.0.1)
+
+GIT
+  remote: https://github.com/boxen/puppet-homebrew.git
+  ref: high-sierra
+  sha: c7abfdc791bdf3c55c9856b22e0121a69a075cf0
+  specs:
+    puppet-homebrew (0.0.1)
+
+GITHUBTARBALL
+  remote: boxen/puppet-dash
+  specs:
+    dash (1.0.0)
+
+GIT
+  remote: https://github.com/boxen/puppet-nodejs.git
+  ref: high-sierra
+  sha: e28943eca2eda96cba97b8841bf968c6279d7256
+  specs:
+    puppet-nodejs (0.0.1)
+
+GIT
+  remote: https://github.com/boxen/puppet-ruby.git
+  ref: high-sierra
+  sha: e27c7c68d27efa2cad28b474c7e766f87cebe43b
+  specs:
+    puppet-ruby (0.0.1)
+
+GIT
+  remote: https://github.com/webflo/puppet-boxen.git
+  ref: master
+  sha: 35c7a5409ba73de3daed9c5c10e341368a75e0f8
+  specs:
+    puppet-boxen (0.0.1)
+
+GIT
+  remote: https://github.com/webflo/puppet-git.git
+  ref: puppet-4
+  sha: f08c5cc890ee194ac0b90111634557c46c830cf6
+  specs:
+    puppet-git (0.0.1)
 
 GITHUBTARBALL
   remote: boxen/puppet-brewcask
@@ -14,34 +56,14 @@ GITHUBTARBALL
     brewcask (0.0.10)
 
 GITHUBTARBALL
-  remote: boxen/puppet-dash
-  specs:
-    dash (1.0.0)
-
-GITHUBTARBALL
-  remote: boxen/puppet-dnsmasq
-  specs:
-    dnsmasq (2.0.4)
-
-GITHUBTARBALL
   remote: boxen/puppet-foreman
   specs:
     foreman (1.2.0)
 
 GITHUBTARBALL
-  remote: boxen/puppet-git
-  specs:
-    git (2.13.0)
-
-GITHUBTARBALL
   remote: boxen/puppet-go
   specs:
     go (2.1.0)
-
-GITHUBTARBALL
-  remote: boxen/puppet-homebrew
-  specs:
-    homebrew (2.2.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-hub
@@ -67,11 +89,6 @@ GITHUBTARBALL
   remote: boxen/puppet-nginx
   specs:
     nginx (1.9.0)
-
-GITHUBTARBALL
-  remote: boxen/puppet-nodejs
-  specs:
-    nodejs (5.0.9)
 
 GITHUBTARBALL
   remote: boxen/puppet-openssl
@@ -114,11 +131,6 @@ GITHUBTARBALL
     repository (2.4.1)
 
 GITHUBTARBALL
-  remote: boxen/puppet-ruby
-  specs:
-    ruby (8.6.0)
-
-GITHUBTARBALL
   remote: boxen/puppet-sudo
   specs:
     sudo (1.0.0)
@@ -156,13 +168,10 @@ GITHUBTARBALL
 DEPENDENCIES
   autoconf (= 1.0.0)
   boxen (= 3.13.0)
-  brewcask (= 0.0.10)
   dash (= 1.0.0)
-  dnsmasq (= 2.0.4)
+  brewcask (= 0.0.10)
   foreman (= 1.2.0)
-  git (= 2.13.0)
   go (= 2.1.0)
-  homebrew (= 2.2.0)
   hub (= 1.4.5)
   inifile (= 1.4.1)
   libpng (= 1.0.0)
@@ -170,16 +179,18 @@ DEPENDENCIES
   memcached (= 2.0.0)
   module_data (= 0.0.4)
   nginx (= 1.9.0)
-  nodejs (= 5.0.9)
   openssl (= 1.0.0)
   osx (= 2.7.0)
   pcre (= 1.0.0)
   phantomjs (= 3.0.0)
   pkgconfig (= 1.0.0)
-  pow (= 2.1.0)
-  redis (= 3.1.0)
+  puppet-boxen (= 0.0.1)
+  puppet-dnsmasq (= 0.0.1)
+  puppet-git (= 0.0.1)
+  puppet-homebrew (= 0.0.1)
+  puppet-nodejs (= 0.0.1)
+  puppet-ruby (= 0.0.1)
   repository (= 2.4.1)
-  ruby (= 8.6.0)
   stdlib (= 4.7.0)
   sudo (= 1.0.0)
   sysctl (= 1.0.1)
