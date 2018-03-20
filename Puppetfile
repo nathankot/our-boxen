@@ -30,7 +30,7 @@ end
 # config. Required.
 
 # github "boxen", "3.13.0"
-mod "puppet-boxen", "0.0.1", :git => "https://github.com/webflo/puppet-boxen.git", :ref => "master"
+mod "puppet-boxen", "0.0.1", :git => "https://github.com/nathankot/puppet-boxen.git", :ref => "master"
 
 # Support for default hiera data in modules
 

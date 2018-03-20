@@ -1,8 +1,3 @@
-GITHUBTARBALL
-  remote: boxen/puppet-autoconf
-  specs:
-    autoconf (1.0.0)
-
 GIT
   remote: https://github.com/boxen/puppet-dnsmasq.git
   ref: high-sierra
@@ -16,11 +11,6 @@ GIT
   sha: c7abfdc791bdf3c55c9856b22e0121a69a075cf0
   specs:
     puppet-homebrew (0.0.1)
-
-GITHUBTARBALL
-  remote: boxen/puppet-dash
-  specs:
-    dash (1.0.0)
 
 GIT
   remote: https://github.com/boxen/puppet-nodejs.git
@@ -37,9 +27,9 @@ GIT
     puppet-ruby (0.0.1)
 
 GIT
-  remote: https://github.com/webflo/puppet-boxen.git
+  remote: https://github.com/nathankot/puppet-boxen.git
   ref: master
-  sha: 35c7a5409ba73de3daed9c5c10e341368a75e0f8
+  sha: a5f86a7200275ea84849bd995dfb0b380c4ee1ba
   specs:
     puppet-boxen (0.0.1)
 
@@ -51,9 +41,19 @@ GIT
     puppet-git (0.0.1)
 
 GITHUBTARBALL
+  remote: boxen/puppet-autoconf
+  specs:
+    autoconf (1.0.0)
+
+GITHUBTARBALL
   remote: boxen/puppet-brewcask
   specs:
     brewcask (0.0.10)
+
+GITHUBTARBALL
+  remote: boxen/puppet-dash
+  specs:
+    dash (1.0.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-foreman
@@ -167,9 +167,8 @@ GITHUBTARBALL
 
 DEPENDENCIES
   autoconf (= 1.0.0)
-  boxen (= 3.13.0)
-  dash (= 1.0.0)
   brewcask (= 0.0.10)
+  dash (= 1.0.0)
   foreman (= 1.2.0)
   go (= 2.1.0)
   hub (= 1.4.5)
@@ -184,12 +183,14 @@ DEPENDENCIES
   pcre (= 1.0.0)
   phantomjs (= 3.0.0)
   pkgconfig (= 1.0.0)
+  pow (= 2.1.0)
   puppet-boxen (= 0.0.1)
   puppet-dnsmasq (= 0.0.1)
   puppet-git (= 0.0.1)
   puppet-homebrew (= 0.0.1)
   puppet-nodejs (= 0.0.1)
   puppet-ruby (= 0.0.1)
+  redis (= 3.1.0)
   repository (= 2.4.1)
   stdlib (= 4.7.0)
   sudo (= 1.0.0)
